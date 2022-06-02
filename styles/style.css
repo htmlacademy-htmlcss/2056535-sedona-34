@@ -22,6 +22,8 @@ body {
     color: #333333;  
 }
 
+/*Главная страница*/
+
 .main-header {
     color: #000000;
 }
@@ -32,6 +34,15 @@ body {
     line-height: 26px;
     text-decoration: none;
     color: inherit;
+    text-align: center;
+}
+
+.navigation-btn {
+    font-size: 16px;
+    line-height: 20px;
+    text-transform: uppercase;
+    text-decoration: none;
+    text-align: center;
 }
 
 .main-index {
@@ -41,4 +52,76 @@ body {
     color: #333333;
     background-size: 100% auto;
     text-align: center;
+}
+
+.main-index-title, .hostel-search-title, .subscribe-title{
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 36px;
+    text-transform: uppercase;
+}
+
+.main-index-subtitle {
+    font-size: 22px;
+    line-height: 26px;
+}
+
+.advantages-title {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+    text-transform: uppercase;  
+}
+
+.advantages-item.basic{
+    background-color: #82B3D3;
+}
+
+.advantages-item.second-1{
+    background-color: rgba(131, 179, 211, 0.12);
+}
+
+.advantages-item.second-2{
+    background-color: rgba(131, 179, 211, 0.2);
+}
+
+.advantages-list.info {
+    background-color: #FFFFFF;
+}
+
+.advantages-item.info.second-1{
+    background-color: rgba(131, 179, 211, 0.12);
+}
+
+.subscribe {
+    background-image: url('../images/email-background.png');
+    background-repeat: no-repeat;
+    background-color: #FFFFFF;
+    background-size: 100% auto;
+}
+    
+
+.btn-search, btn-subscribe {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 36px;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.footer-phone {
+    font-size: 40px;
+    line-height: 40px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #000000;
+}
+
+/*Страница каталога*/
+
+.catalog-filter {
+    background-image: url('../images/filter-background.png');
+    background-repeat: no-repeat;
+    background-color: #FFFFFF;
+    background-size: 100% auto;
 }
