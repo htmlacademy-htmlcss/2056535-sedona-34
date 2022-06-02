@@ -45,13 +45,11 @@ body {
     text-align: center;
 }
 
-.main-index {
+.main-index-logo {
     background-image: url(/images/index/index-background.jpg);
     background-repeat: no-repeat;
     background-color: #FFFFFF;
-    color: #333333;
     background-size: 100% auto;
-    text-align: center;
 }
 
 .main-index-title, .hostel-search-title, .subscribe-title{
@@ -61,9 +59,17 @@ body {
     text-transform: uppercase;
 }
 
+.subscribe-title, .subscribe-description {
+    color:#FFFFFF;
+}
+
 .main-index-subtitle {
     font-size: 22px;
     line-height: 26px;
+}
+
+ol, li {
+    list-style: none;
 }
 
 .advantages-title {
@@ -73,26 +79,43 @@ body {
     text-transform: uppercase;  
 }
 
-.advantages-item.basic{
+.advantages-item{
     background-color: #82B3D3;
 }
 
-.advantages-item.second-1{
-    background-color: rgba(131, 179, 211, 0.12);
+.advantages-item:nth-child(3) {
+    background-color:rgba(131, 179, 211, 0.12);
 }
 
-.advantages-item.second-2{
-    background-color: rgba(131, 179, 211, 0.2);
+.advantages-item:nth-child(4) {
+    background-color:rgba(131, 179, 211, 0.2);;
 }
 
-.advantages-list.info {
+.advantages-item:nth-child(5) {
+    background-color:rgba(131, 179, 211, 0.12);
+}
+
+.advantages-list-info {
     background-color: #FFFFFF;
 }
 
-.advantages-item.info.second-1{
+.advantages-item-info:nth-child(1) {
+    background-image: url('../images/index/advantages-home.svg');
+    background-repeat: no-repeat;
     background-color: rgba(131, 179, 211, 0.12);
 }
 
+.advantages-item-info:nth-child(2) {
+    background-image: url('../images/index/advantages-food.svg');
+    background-repeat: no-repeat;
+}
+
+.advantages-item-info:nth-child(3) {
+    background-image: url('../images/index/advantages-souvenir.svg');
+    background-repeat: no-repeat;
+    background-color: rgba(131, 179, 211, 0.12);
+}
+    
 .subscribe {
     background-image: url('../images/email-background.png');
     background-repeat: no-repeat;
@@ -125,3 +148,4 @@ body {
     background-color: #FFFFFF;
     background-size: 100% auto;
 }
+
