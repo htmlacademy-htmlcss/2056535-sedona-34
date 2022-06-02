@@ -194,7 +194,7 @@ ol, ul {
     text-decoration: none;
 }
 
-.btn-more, .btn-favorite {
+.btn-more, .btn-favorite, .btn-in-favorite {
     font-weight: 700;
     font-size: 16px;
     line-height: 20px;
@@ -212,6 +212,11 @@ ol, ul {
     color:#FFFFFF;
 }
 
+.btn-in-favorite {
+    background-color: #7DB54F;
+    color:#FFFFFF;
+}
+
 
 .final-rating {
     font-size: 16px;
@@ -220,13 +225,20 @@ ol, ul {
     color: #333333;
 }
 
-.pagintion {
+.pagination-item {
+    background-color: #FFFFFF;
+}
+
+.pagination-link {
+    text-decoration: none;
+    color: #ffffff;
     background-color: #82B3D3;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 36px;
 }
 
 .pagination-current {
-    background-color: #F2F2F2;
     color: #000000;
+    background-color: #F2F2F2;
 }
-
-
