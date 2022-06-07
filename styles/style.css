@@ -1,6 +1,6 @@
 @font-face {
     font-family: "PT Sans";
-    src: url("./fonts/ptsans-400.woff2") format("woff2");
+    src: url("../fonts/ptsans-400.woff2") format("woff2");
     font-weight: 400;
     font-style: normal;
     font-display: swap;
@@ -8,7 +8,7 @@
 
 @font-face {
     font-family: "PT Sans";
-    src: url("./fonts/ptsans-700.woff2") format("woff2");
+    src: url("../fonts/ptsans-700.woff2") format("woff2");
     font-weight: 700;
     font-style: normal;
     font-display: swap;
@@ -23,6 +23,10 @@ body {
 }
 
 /*Главная страница*/
+
+ol, ul {
+    list-style: none;
+}
 
 .main-index {
     background-color: #FFFFFF;
@@ -58,7 +62,7 @@ body {
 }
 
 .main-index-logo {
-    background-image: url(./images/index/index-background.jpg);
+    background-image: url(../images/index/index-background.jpg);
     background-repeat: no-repeat;
     background-color: #FFFFFF;
 }
@@ -96,42 +100,29 @@ body {
     text-transform: uppercase;  
 }
 
-.advantages-item{
+.light-blue {
+    background-color: #F0F6FA;
+}
+
+.blue {
+        background-color: #E6F0F6;
+}
+
+.dark-blue {
     background-color: #82B3D3;
 }
 
-.advantages-item:nth-child(3) {
-    background-color:rgba(131, 179, 211, 0.12);
-}
-
-.advantages-item:nth-child(4) {
-    background-color:rgba(131, 179, 211, 0.2);;
-}
-
-.advantages-item:nth-child(5) {
-    background-color:rgba(131, 179, 211, 0.12);
-}
-
-.advantages-list-info {
+.white {
     background-color: #FFFFFF;
-}
+} 
 
-.advantages-item-info:nth-child(1) {
-    background-color: rgba(131, 179, 211, 0.12)
-}
-
-.advantages-item-info:nth-child(3) {
-    background-color: rgba(131, 179, 211, 0.12)
-}
-    
 .subscribe {
-    background-image: url('./images/email-background.png');
+    background-image: url('../images/email-background.png');
     background-repeat: no-repeat;
     background-color: #FFFFFF;
     background-size: 100% auto;
 }
     
-
 .btn-search {
     font-weight: 700;
     font-size: 20px;
@@ -152,7 +143,6 @@ body {
     color: #FFFFFF;
 }
 
-
 .footer-phone {
     font-size: 40px;
     line-height: 40px;
@@ -168,7 +158,7 @@ body {
 }
 
 .catalog-filter {
-    background-image: url('./images/filter-background.png');
+    background-image: url('../images/filter-background.png');
     background-repeat: no-repeat;
     background-color: #FFFFFF;
     background-size: 100% auto;
@@ -234,7 +224,6 @@ body {
     text-transform: uppercase;
     text-decoration: none;
 }
-
 
 .final-rating {
     font-size: 16px;
