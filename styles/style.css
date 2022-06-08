@@ -36,6 +36,8 @@ ol, ul {
     list-style: none;
 }
 
+/*Хэдер*/
+
 .main-header {
     background-color: #FFFFFF;
     color: #000000;
@@ -43,6 +45,8 @@ ol, ul {
     width: 1200px;
     margin: 0 auto;
 }
+
+/* Навигация*/
 
 .navigation {
     display: flex;
@@ -87,6 +91,8 @@ ol, ul {
     color: #FFFFFF;
 }
 
+/*Мэйн*/
+
 .main-index {
     width: 1200px;
     margin: 0 auto;
@@ -119,27 +125,12 @@ ol, ul {
     text-transform: uppercase;
 }
 
-.hostel-search-title {
-    font-size: 30px;
-    line-height: 36px;
-    text-transform: uppercase;
-}
-
-.subscribe-title{
-    font-size: 30px;
-    line-height: 36px;
-    text-transform: uppercase;
-    color:#FFFFFF;}
-
-.subscribe-description {
-    color:#FFFFFF;
-}
-
 .main-index-subtitle {
     font-size: 22px;
     line-height: 26px;
 }
 
+/*Список преимуществ */
 .advantages-title {
     font-size: 24px;
     line-height: 28px;
@@ -169,13 +160,14 @@ ol, ul {
     background-color: #FFFFFF;
 } 
 
-.subscribe {
-    background-image: url('../images/email-background.png');
-    background-repeat: no-repeat;
-    background-color: #FFFFFF;
-    background-size: 100% auto;
+/*Поиск отеля*/
+
+.hostel-search-title {
+    font-size: 30px;
+    line-height: 36px;
+    text-transform: uppercase;
 }
-    
+
 .btn-search {
     font-weight: 700;
     font-size: 20px;
@@ -184,6 +176,25 @@ ol, ul {
     text-decoration: none;
     background-color: #756157;
     color: #FFFFFF;
+}
+
+/*Рассылка*/
+
+.subscribe-title{
+    font-size: 30px;
+    line-height: 36px;
+    text-transform: uppercase;
+    color:#FFFFFF;}
+
+.subscribe-description {
+    color:#FFFFFF;
+}
+
+.subscribe {
+    background-image: url('../images/email-background.png');
+    background-repeat: no-repeat;
+    background-color: #FFFFFF;
+    background-size: 100% auto;
 }
 
 .btn-subscribe {
@@ -196,6 +207,7 @@ ol, ul {
     color: #FFFFFF;
 }
 
+/*Футер*/
 .main-footer-container {
     display: flex;
     width: 1200px;
@@ -227,9 +239,24 @@ ol, ul {
 
 /*Страница каталога*/
 
+
 .main-inner {
     background-color: #F2F2F2;
 }
+
+.header-inner-title {
+    font-weight: 700;
+    font-size: 60px;
+    line-height: 78px;
+}
+
+/*Хлебные крошки*/
+
+.breadcrumbs-link {
+    font-size: 16px;
+}
+
+/*Фильтры*/
 
 .catalog-filter {
     background-image: url('../images/filter-background.png');
@@ -239,24 +266,15 @@ ol, ul {
     color: #FFFFFF;
 }
 
-.header-inner-title {
-    font-weight: 700;
-    font-size: 60px;
-    line-height: 78px;
-}
-
-.breadcrumbs-link {
-    font-size: 16px;
-}
-
 .catalog-filter-title {
     font-size: 20px;
     line-height: 26px;
 }
 
-.hotel-search-title {
-    font-size: 30px;
-    line-height: 36px;
+/*Карточки продуктов*/
+
+.catalog-products {
+    background-color: #FFFFFF;
 }
 
 .product-card-title {
@@ -306,6 +324,14 @@ ol, ul {
     color: #333333;
 }
 
+/*Подписка*/
+
+.subscribe-catalog {
+    background-color: #FFFFFF;
+} 
+
+/*Пагинация*/
+
 .pagination-item {
     background-color: #FFFFFF;
 }
@@ -324,10 +350,3 @@ ol, ul {
     background-color: #F2F2F2;
 }
 
-.subscribe-catalog {
-    background-color: #FFFFFF;
-} 
-
-.catalog-products {
-    background-color: #FFFFFF;
-}
