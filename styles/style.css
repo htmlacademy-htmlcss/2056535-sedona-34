@@ -103,11 +103,11 @@ ol, ul {
     flex-grow: 1;
 }
 
-
 .main-index-logo {
     background-image: url(../images/index/index-background.jpg);
     background-repeat: no-repeat;
     background-color: #FFFFFF;
+    padding: 51px 371px 72px 371px;
 }
 
 .main-logo {
@@ -128,6 +128,9 @@ ol, ul {
 .main-index-subtitle {
     font-size: 22px;
     line-height: 26px;
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 90px;
 }
 
 /*Список преимуществ */
@@ -166,9 +169,21 @@ ol, ul {
     font-size: 30px;
     line-height: 36px;
     text-transform: uppercase;
+    text-align: center;
+    margin-top: 90px;
+}
+
+.hostel-search-description {
+    font-size: 22px;
+    line-height: 26px;
+    text-align: center;
+    width: 592px;
+    margin: 0 304px;
+
 }
 
 .btn-search {
+    display: block;
     font-weight: 700;
     font-size: 20px;
     line-height: 36px;
@@ -176,25 +191,38 @@ ol, ul {
     text-decoration: none;
     background-color: #756157;
     color: #FFFFFF;
+    text-align: center;
+    padding: 12px 15px;
+    margin: 56px 313px 93px 313px;
 }
 
 /*Рассылка*/
-
-.subscribe-title{
-    font-size: 30px;
-    line-height: 36px;
-    text-transform: uppercase;
-    color:#FFFFFF;}
-
-.subscribe-description {
-    color:#FFFFFF;
-}
 
 .subscribe {
     background-image: url('../images/email-background.png');
     background-repeat: no-repeat;
     background-color: #FFFFFF;
     background-size: 100% auto;
+}
+
+.subscribe-title{
+    font-size: 30px;
+    line-height: 36px;
+    text-transform: uppercase;
+    color:#FFFFFF;
+    text-align: center;
+}
+
+.subscribe-description {
+    color:#FFFFFF;
+    font-size: 22px;
+    line-height: 26px;
+    text-align: center;
+}
+
+.subscribe-form {
+    font-family: inherit;
+    
 }
 
 .btn-subscribe {
