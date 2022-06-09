@@ -155,10 +155,17 @@ ol, ul {
     justify-content: flex-start;
 }
 
+.advantages-content-item {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
 .advantages-item-info {
     width: 400px;
 }
-div.advantages-content {
+
+.advantages-content{
     width: 400px;
 }
 
@@ -244,7 +251,6 @@ div.advantages-content {
     text-transform: uppercase;
     color:#FFFFFF;
     text-align: center;
-    margin-top: 94px;
 }
 
 .subscribe-description {
@@ -258,7 +264,6 @@ div.advantages-content {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    margin-bottom: 94px;
 }
 
 input[type=email] {
