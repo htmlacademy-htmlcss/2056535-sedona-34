@@ -326,7 +326,9 @@ input[type=email] {
 
 
 .main-inner {
-    background-color: #F2F2F2;
+    width: 1200px;
+    margin: 0 auto;
+    background-color: #FFFFFF;
 }
 
 .header-inner-title {
@@ -362,6 +364,12 @@ input[type=email] {
     background-color: #FFFFFF;
 }
 
+.product-list {
+    width: 1200px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
 .product-card-title {
     font-size: 24px;
     line-height: 28px;
@@ -372,6 +380,9 @@ input[type=email] {
     text-decoration: none;
 }
 
+.product-card {
+    width: 340px;
+}
 .btn-more {
     background-color: #756157;
     color:#FFFFFF;
