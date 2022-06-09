@@ -34,6 +34,8 @@ html {
 
 ol, ul {
     list-style: none;
+    padding: 0;
+    margin: 0;
 }
 
 /*Хэдер*/
@@ -89,6 +91,8 @@ ol, ul {
     text-align: center;
     background-color: #756157;
     color: #FFFFFF;
+    border-radius: 4px;
+    padding: 9px 15px;
 }
 
 /*Мэйн*/
@@ -134,6 +138,34 @@ ol, ul {
 }
 
 /*Список преимуществ */
+
+.advantages-container {
+    display: flex;
+}
+
+.advantages-list {
+    width: 1200px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.advantages-list-info {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
+.advantages-item-info {
+    width: 400px;
+}
+div.advantages-content {
+    width: 400px;
+}
+
+.advantages-image {
+    display: block;
+}
+
 .advantages-title {
     font-size: 24px;
     line-height: 28px;
@@ -194,6 +226,7 @@ ol, ul {
     text-align: center;
     padding: 12px 15px;
     margin: 56px 313px 93px 313px;
+    border-radius: 4px;
 }
 
 /*Рассылка*/
@@ -211,6 +244,7 @@ ol, ul {
     text-transform: uppercase;
     color:#FFFFFF;
     text-align: center;
+    margin-top: 94px;
 }
 
 .subscribe-description {
@@ -221,8 +255,21 @@ ol, ul {
 }
 
 .subscribe-form {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 94px;
+}
+
+input[type=email] {
     font-family: inherit;
-    
+    font-size: 18px;
+    line-height: 21px;
+    width: 600px;
+    box-sizing: border-box;
+    padding: 20px 490px 20px 20px;
+    border-radius: 10px 0 0 10px;
+    border: 0;
 }
 
 .btn-subscribe {
@@ -233,6 +280,10 @@ ol, ul {
     text-transform: uppercase;
     text-decoration: none;
     color: #FFFFFF;
+    width: 200px;
+    padding: 12px 15px;
+    border-radius: 0px 10px 10px 0px;
+    border: 0;
 }
 
 /*Футер*/
@@ -245,7 +296,8 @@ ol, ul {
 
 .social {
     width: 142px;
-    margin-right: 42px;
+    margin-left: 70px;
+    margin-right: 237px;
 }
 
 .footer-phone {
@@ -256,7 +308,7 @@ ol, ul {
     color: #000000;
     display: block;
     width: 332px;
-    margin-right: 42px;
+    margin-right: 236px;
 }
 
 
@@ -358,6 +410,17 @@ ol, ul {
     background-color: #FFFFFF;
 } 
 
+.subscribe-title.catalog {
+    color: #333333;
+}
+
+.subscribe-description.catalog {
+    color: #333333;
+}
+
+input[type=email].input-catalog {
+    background-color: #F2F2F2;
+}
 /*Пагинация*/
 
 .pagination-item {
