@@ -62,6 +62,7 @@ ol, ul {
 
 .navigation {
     display: flex;
+    align-items: center;
 }
 
 .main-header-logo {
@@ -70,15 +71,16 @@ ol, ul {
 }
 
 .navigation-list {
-    width: 390px;
+    max-width: 390px;
     margin: 0;
     padding: 0;
-    margin-right: 240px;
+    display: flex;
 }
 
 .navigation-user {
     max-width: 264px;
     margin-right: auto;
+    margin-left: 230px;
 }
 
 .navigation-link {
@@ -88,6 +90,9 @@ ol, ul {
     text-decoration: none;
     color: inherit;
     text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-left: 34px;
 }
 
 .navigation-btn {
@@ -126,14 +131,13 @@ ol, ul {
 }
 
 .logo-title {
-    width: 654px;
+    display: block;
     text-align: center;
-    padding-top: 64px;
-    padding-bottom: 90px;
+    padding: 64px 270px 90px 270px;
+    max-width: 660px;
 }
 
 .main-index-title {
-    width: 620px;
     font-size: 30px;
     line-height: 36px;
     text-transform: uppercase;
@@ -320,13 +324,14 @@ input[type=email] {
 /*Футер*/
 .main-footer-container {
     display: flex;
+    padding: 40px 70px 30px 70px;
+    align-items: center;
     background-color: #FFFFFF;
 }
 
 .social {
     width: 142px;
-    margin-left: 70px;
-    margin-right: 237px;
+    margin-right: 236px;
 }
 
 .footer-phone {
@@ -340,10 +345,9 @@ input[type=email] {
     margin-right: 236px;
 }
 
-
 .footer-logo {
     display: block;
-    margin-right: 70px;
+    margin-left: auto;
 }
 
 /*Страница каталога*/
