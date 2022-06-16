@@ -384,6 +384,18 @@ input[type=email] {
     line-height: 26px;
 }
 
+.catalog-filter-form {
+    display: flex;
+}
+
+.catalog-filter-group {
+    border: none;
+}
+
+.catalog-filter-list {
+    list-style: none;
+}
+
 /*Карточки продуктов*/
 
 .catalog-products {
@@ -466,6 +478,10 @@ input[type=email].input-catalog {
     background-color: #F2F2F2;
 }
 /*Пагинация*/
+.pagination-wrapper {
+    display: flex;
+    flex-direction: row;
+}
 
 .pagination-item {
     background-color: #FFFFFF;
