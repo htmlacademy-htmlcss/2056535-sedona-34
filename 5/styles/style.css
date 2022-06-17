@@ -15,7 +15,8 @@
 }
 
 body {
-    margin: 0;
+    margin: 0 auto;
+    width: 1200px;
     display: flex;
     flex-direction: column;
     min-height: 100%;
@@ -28,6 +29,17 @@ body {
 
 html {
     height: 100%;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    border: 0;
+    clip: rect(0 0 0 0);
+    overflow: hidden;
 }
 
 /*Главная страница*/
@@ -44,16 +56,13 @@ ol, ul {
     background-color: #FFFFFF;
     color: #000000;
     display: flex;
-    width: 1200px;
-    margin: 0 auto;
 }
 
 /* Навигация*/
 
 .navigation {
     display: flex;
-    width: 1200px;
-    margin: 0 auto;
+    align-items: center;
 }
 
 .main-header-logo {
@@ -62,15 +71,16 @@ ol, ul {
 }
 
 .navigation-list {
-    width: 390px;
+    max-width: 390px;
     margin: 0;
     padding: 0;
-    margin-right: 240px;
+    display: flex;
 }
 
 .navigation-user {
     max-width: 264px;
     margin-right: auto;
+    margin-left: 230px;
 }
 
 .navigation-link {
@@ -80,6 +90,9 @@ ol, ul {
     text-decoration: none;
     color: inherit;
     text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-left: 34px;
 }
 
 .navigation-btn {
@@ -98,8 +111,6 @@ ol, ul {
 /*Мэйн*/
 
 .main-index {
-    width: 1200px;
-    margin: 0 auto;
     background-color: #FFFFFF;
 }
 
@@ -119,11 +130,14 @@ ol, ul {
     margin: 0 auto;
 }
 
-.main-index-title {
-    width: 620px;
-    height: 72px;
+.logo-title {
+    display: block;
     text-align: center;
-    margin: 63px 290px 41px 290px;
+    padding: 64px 270px 90px 270px;
+    max-width: 660px;
+}
+
+.main-index-title {
     font-size: 30px;
     line-height: 36px;
     text-transform: uppercase;
@@ -133,8 +147,6 @@ ol, ul {
     font-size: 22px;
     line-height: 26px;
     text-align: center;
-    margin-top: 0;
-    margin-bottom: 90px;
 }
 
 /*Список преимуществ */
@@ -144,7 +156,6 @@ ol, ul {
 }
 
 .advantages-list {
-    width: 1200px;
     display: flex;
     flex-wrap: wrap;
 }
@@ -153,6 +164,7 @@ ol, ul {
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-start;
+    color: #000000;
 }
 
 .advantages-content-item {
@@ -163,10 +175,18 @@ ol, ul {
 
 .advantages-item-info {
     width: 400px;
+    height: 384px;
 }
 
 .advantages-content{
     width: 400px;
+    height: 384px;
+}
+
+.advantages-content-description {
+    max-width: 230px;
+    margin: 0;
+    padding: 92px 85px;
 }
 
 .advantages-image {
@@ -179,6 +199,7 @@ ol, ul {
     text-transform: uppercase;
     text-align: center;
 }
+
 
 .advantages-list {
     margin: 0;
@@ -196,6 +217,7 @@ ol, ul {
 
 .dark-blue {
     background-color: #82B3D3;
+    color: #FFFFFF;
 }
 
 .white {
@@ -204,21 +226,28 @@ ol, ul {
 
 /*Поиск отеля*/
 
+.hostel-search {
+    padding: 91px 304px 93px 304px;
+}
+
+.hostel-search-wrap {
+    text-align: center;
+    max-width: 592px;
+}
+
 .hostel-search-title {
     font-size: 30px;
     line-height: 36px;
     text-transform: uppercase;
-    text-align: center;
-    margin-top: 90px;
+    margin-top: 0;
+    margin-bottom: 30px;
 }
 
 .hostel-search-description {
     font-size: 22px;
     line-height: 26px;
-    text-align: center;
-    width: 592px;
-    margin: 0 304px;
-
+    margin-top: 0;
+    margin-bottom: 56px;
 }
 
 .btn-search {
@@ -232,7 +261,6 @@ ol, ul {
     color: #FFFFFF;
     text-align: center;
     padding: 12px 15px;
-    margin: 56px 313px 93px 313px;
     border-radius: 4px;
 }
 
@@ -243,6 +271,7 @@ ol, ul {
     background-repeat: no-repeat;
     background-color: #FFFFFF;
     background-size: 100% auto;
+    padding: 94px 200px;
 }
 
 .subscribe-title{
@@ -251,6 +280,7 @@ ol, ul {
     text-transform: uppercase;
     color:#FFFFFF;
     text-align: center;
+    margin-bottom: 29px;
 }
 
 .subscribe-description {
@@ -258,6 +288,7 @@ ol, ul {
     font-size: 22px;
     line-height: 26px;
     text-align: center;
+    margin-bottom: 46px;
 }
 
 .subscribe-form {
@@ -294,15 +325,14 @@ input[type=email] {
 /*Футер*/
 .main-footer-container {
     display: flex;
-    width: 1200px;
-    margin: 0 auto;
+    padding: 40px 70px 30px 70px;
+    align-items: center;
     background-color: #FFFFFF;
 }
 
 .social {
     width: 142px;
-    margin-left: 70px;
-    margin-right: 237px;
+    margin-right: 236px;
 }
 
 .footer-phone {
@@ -316,28 +346,36 @@ input[type=email] {
     margin-right: 236px;
 }
 
-
 .footer-logo {
     display: block;
-    margin-right: 70px;
+    margin-left: auto;
 }
 
 /*Страница каталога*/
 
 
 .main-inner {
-    width: 1200px;
-    margin: 0 auto;
     background-color: #FFFFFF;
+    padding-top: 0;
 }
 
 .header-inner-title {
     font-weight: 700;
     font-size: 60px;
     line-height: 78px;
+    margin-top: 0;
+    margin-bottom: 10px;
 }
 
 /*Хлебные крошки*/
+
+.breadcrumbs {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    margin-bottom: 40px;
+}
 
 .breadcrumbs-link {
     font-size: 16px;
@@ -351,11 +389,47 @@ input[type=email] {
     background-color: #FFFFFF;
     background-size: 100% auto;
     color: #FFFFFF;
+    padding: 35px 70px 70px 70px;
 }
 
 .catalog-filter-title {
     font-size: 20px;
     line-height: 26px;
+}
+
+.catalog-filter-form {
+    display: flex;
+}
+
+.catalog-filter-group {
+    border: none;
+    padding: 0;
+}
+
+.catalog-filter-list {
+    list-style: none;
+}
+/*Сортировка состояний страницы*/
+
+.sorting-wrapper {
+    display: flex;
+    margin-bottom: 56px;
+    padding: 50px 72px 0 72px;
+}
+
+.catalog-hostel-search-title {
+    font-size: 30px;
+    line-height: 36px;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+.catalog-select {
+    padding: 14px 130px 14px 20px;
+    font-family: inherit;
+    font-size: 18px;
+    line-height: 21px;
+    color: #333333;
 }
 
 /*Карточки продуктов*/
@@ -365,7 +439,6 @@ input[type=email] {
 }
 
 .product-list {
-    width: 1200px;
     display: flex;
     flex-wrap: wrap;
     margin-left: 72px;
@@ -441,9 +514,22 @@ input[type=email].input-catalog {
     background-color: #F2F2F2;
 }
 /*Пагинация*/
+.pagination-wrapper {
+    display: flex;
+    padding: 30px 72px 25px 72px;
+    justify-content: space-between;
+}
+
+.pagination {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
 
 .pagination-item {
     background-color: #FFFFFF;
+    margin-right: 8px;
 }
 
 .pagination-link {
@@ -453,6 +539,12 @@ input[type=email].input-catalog {
     font-weight: 700;
     font-size: 20px;
     line-height: 36px;
+    display: block;
+    box-sizing: border-box;
+    width: 60px;
+    height: 60px;
+    border-radius: 4px;
+    padding: 12px 24px;
 }
 
 .pagination-current {
