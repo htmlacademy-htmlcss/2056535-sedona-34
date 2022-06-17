@@ -64,36 +64,47 @@ ol, ul {
 
 /* Навигация*/
 
-.navigation {
-    display: flex;
-    align-items: center;
+.main-header-logo-link {
+    display: block;
+    margin-left: 70px;
 }
 
-.main-header-logo {
-    display: block;
+.navigation {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+    margin-left: 239px;
 }
 
 .navigation-list {
-    max-width: 390px;
     margin: 0;
     padding: 0;
+    width: 450px;
     display: flex;
+    flex-wrap: wrap;
+    list-style-type: none;
 }
 
 .navigation-user {
-    display: flex;
-    max-width: 264px;
+    margin-right: 70px;
+    justify-content: flex-end;
+    width: 300px;
 }
 
 .navigation-link {
+    display: block;
     font-weight: 700;
     font-size: 20px;
     line-height: 26px;
     text-decoration: none;
     color: inherit;
     text-align: center;
-    width: 18px;
-    height: 18px;
+    padding: 20px 17px;
+}
+
+.navigation-user .navigation-link {
+    min-width: 18px;
+    min-height: 18px;
 }
 
 .navigation-btn {
