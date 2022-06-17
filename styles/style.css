@@ -185,7 +185,8 @@ ol, ul {
 
 .advantages-content-description {
     max-width: 230px;
-    margin: 0 auto;
+    margin: 0;
+    padding: 92px 85px;
 }
 
 .advantages-image {
@@ -355,15 +356,26 @@ input[type=email] {
 
 .main-inner {
     background-color: #FFFFFF;
+    padding-top: 0;
 }
 
 .header-inner-title {
     font-weight: 700;
     font-size: 60px;
     line-height: 78px;
+    margin-top: 0;
+    margin-bottom: 10px;
 }
 
 /*Хлебные крошки*/
+
+.breadcrumbs {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    margin-bottom: 40px;
+}
 
 .breadcrumbs-link {
     font-size: 16px;
@@ -377,6 +389,7 @@ input[type=email] {
     background-color: #FFFFFF;
     background-size: 100% auto;
     color: #FFFFFF;
+    padding: 35px 70px 70px 70px;
 }
 
 .catalog-filter-title {
@@ -390,10 +403,33 @@ input[type=email] {
 
 .catalog-filter-group {
     border: none;
+    padding: 0;
 }
 
 .catalog-filter-list {
     list-style: none;
+}
+/*Сортировка состояний страницы*/
+
+.sorting-wrapper {
+    display: flex;
+    margin-bottom: 56px;
+    padding: 50px 72px 0 72px;
+}
+
+.catalog-hostel-search-title {
+    font-size: 30px;
+    line-height: 36px;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+.catalog-select {
+    padding: 14px 130px 14px 20px;
+    font-family: inherit;
+    font-size: 18px;
+    line-height: 21px;
+    color: #333333;
 }
 
 /*Карточки продуктов*/
@@ -480,11 +516,20 @@ input[type=email].input-catalog {
 /*Пагинация*/
 .pagination-wrapper {
     display: flex;
-    flex-direction: row;
+    padding: 30px 72px 25px 72px;
+    justify-content: space-between;
+}
+
+.pagination {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
 }
 
 .pagination-item {
     background-color: #FFFFFF;
+    margin-right: 8px;
 }
 
 .pagination-link {
@@ -494,6 +539,12 @@ input[type=email].input-catalog {
     font-weight: 700;
     font-size: 20px;
     line-height: 36px;
+    display: block;
+    box-sizing: border-box;
+    width: 60px;
+    height: 60px;
+    border-radius: 4px;
+    padding: 12px 24px;
 }
 
 .pagination-current {

@@ -2,7 +2,7 @@
 <html lang="ru">
 <head>
   <meta charset="utf-8">
-  <title>HTML Academy: Седона - Каталог</title>
+  <title>Седона - Каталог</title>
   <link rel="stylesheet" href="./styles/style.css">
 </head>
 <body>
@@ -43,16 +43,18 @@
     <div class="main-page-container">
       <section class="catalog-filter">
         <h1 class="header-inner-title">Гостиницы Седоны</h1>
-        <ol class="breadcrumbs">
-          <li class="breadcrumbs-item">
-            <a class="breadcrumbs-link" href="index.html">
-              <span class="visually-hidden">Главная страница</span>
-            </a>
-          </li>
-          <li class="breadcrumbs-items">
-            <a class="breadcrumbs-link">Гостиницы</a>
-          </li>
-        </ol>
+        <div class="breadcrumbs-wrapper">
+          <ol class="breadcrumbs">
+            <li class="breadcrumbs-item">
+              <a class="breadcrumbs-link" href="index.html">
+                <span class="visually-hidden">Главная страница</span>
+              </a>
+            </li>
+            <li class="breadcrumbs-items">
+              <a class="breadcrumbs-link">Гостиницы</a>
+            </li>
+          </ol>
+        </div>
       <!-- Блок с фильтрами-->
         <form class="catalog-filter-form" action="https://echo.htmlacademy.ru" method="post">
           <fieldset class="catalog-filter-group">
@@ -117,8 +119,10 @@
       </section>
       <!--Блок с карточками-->
       <section class="catalog-products">
-          <h2 class="hotel-search-title">Найдено гостиниц: 38</h2>
-          <select class="select-control" aria-label="Сортировка">
+        <!-- Cортировка-->
+        <div class="sorting-wrapper">
+          <h2 class="catalog-hotel-search-title">Найдено гостиниц: 38</h2>
+          <select class="select-control catalog-select" aria-label="Сортировка">
             <option value="cheap">Сначала дешёвые</option>
             <option value="expensive">Сначала дорогие</option>
             <option value="high-rate">Сначала с высоким рейтингом</option>
@@ -142,6 +146,7 @@
             </li>
           </ul>
         </div>
+        <!--Карточки-->
           <ul class="product-list">
             <li class="product-card">
               <div class="products-card-image">
@@ -256,7 +261,6 @@
               <a class="pagination-link" href="#">10</a>
             </li>
           </ul>
-        </div>
           <!--Сортировка-->
           <form action="https://echo.htmlacademy.ru" method="post">
             <label for="cards-amount">Гостиниц на странице:</label>
@@ -266,6 +270,7 @@
               <option value="8">8</option>
             </select>
           </form>
+        </div>
       </section>
       <!--Рассылка-->
       <section class="subscribe-catalog">
