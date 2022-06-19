@@ -6,37 +6,38 @@
   <link rel="stylesheet" href="./styles/style.css">
 </head>
 <body>
-  <!-- Хэдер-->
   <header class="main-header">
-    <nav class="navigation">
+    <a class="main-header-logo-link" href="index.html">
       <img class="main-header-logo" src="./images/logo/logo-sedona.svg" alt="Лого Седоны." width="140" height="70">
-      <ul class="navigation-list">
-        <li class="navigation-item">
-          <a class="navigation-link navigation-link-current" href="index.html">Главная</a>
-        </li>
-        <li class="navigation-item">
-          <a class="navigation-link" href="#">О Седоне</a>
-        </li>
-        <li class="navigation-item">
-          <a class="navigation-link" href="catalog.html">Гостиницы</a>
-        </li>
-      </ul>
-      <ul class="navigation-list navigation-user">
-        <li class="navigation-item">
-          <a class="navigation-link" href="#">
-            <span class="visually-hidden">Поиск</span>
-          </a>
-        </li>
-        <li class="navigation-item">
-          <a class="navigation-link" href="#">
-            <span class="visually-hidden">Избранное</span>
-          </a>
-        </li>
-        <li class="navigation-item">
-          <a class="btn navigation-btn" href="#hotelsearch">Хочу сюда!</a>
-        </li>
-      </ul>
-    </nav>
+    </a>
+    <nav class="navigation">
+        <ul class="navigation-list">
+          <li class="navigation-item">
+            <a class="navigation-link navigation-link-current" href="index.html">Главная</a>
+          </li>
+          <li class="navigation-item">
+            <a class="navigation-link" href="#">О Седоне</a>
+          </li>
+          <li class="navigation-item">
+            <a class="navigation-link" href="catalog.html">Гостиницы</a>
+          </li>
+        </ul>
+    </nav>    
+    <ul class="navigation-list navigation-user">
+      <li class="navigation-item">
+        <a class="navigation-link search-icon" href="#">
+          <span class="visually-hidden">Поиск</span>
+        </a>
+      </li>
+      <li class="navigation-item">
+        <a class="navigation-link heart-icon" href="#">
+          <span class="visually-hidden">Избранное</span>
+        </a>
+      </li>
+      <li class="navigation-item">
+        <a class="btn navigation-btn" href="#hotelsearch">Хочу сюда!</a>
+      </li>
+    </ul>
   </header>
   <!-- Основное содержимое -->
   <main class="main-inner main-container">
@@ -113,8 +114,14 @@
               <div class="cost-range"></div>
             </div>
           </fieldset>
-          <button class="btn btn-filter" type="submit">Применить</button>
-          <input class="btn btn-filter-reset" type="reset" value="Сбросить">
+          <ul class="catalog-button-list">
+            <li class="catalog-button-item">
+              <button class="btn btn-filter" type="submit">Применить</button>
+            </li>
+            <li class="catalog-button-item">
+              <input class="btn btn-filter-reset" type="reset" value="Сбросить">
+            </li>
+          </ul>
         </form>
       </section>
       <!--Блок с карточками-->
@@ -262,9 +269,9 @@
             </li>
           </ul>
           <!--Сортировка-->
-          <form action="https://echo.htmlacademy.ru" method="post">
-            <label for="cards-amount">Гостиниц на странице:</label>
-            <select class="select-control" id="cards-amount">
+          <form class="pagination-select-form" action="https://echo.htmlacademy.ru" method="post">
+            <label class="pagination-select-label" for="cards-amount">Гостиниц на странице:</label>
+            <select class="select-control pagination-select" id="cards-amount">
               <option value="2">2</option>
               <option selected value="4">4</option>
               <option value="8">8</option>
