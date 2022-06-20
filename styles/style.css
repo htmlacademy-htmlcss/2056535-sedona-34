@@ -368,24 +368,45 @@ input[type=email] {
     background-color: #FFFFFF;
 }
 
-.social {
-    width: 144px;
-    margin-right: 236px;
-}
-
 .social-list {
+    box-sizing: border-box;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
     display: flex;
-    align-items: center;
+    width: 144px;
+    height: 44px;
+    margin-right: 216px;
 }
 
 .social-item {
-    max-width: 48px;
-    max-height: 40px;
+    flex-grow: 1;
 }
 
 .social-link {
     display: block;
+    width: 100%;
+    height: 100%;
 }
+
+.social-vk {
+    background-image: url(../images/social-icon/social-icon--vk.svg);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+}
+
+.social-tg {
+    background-image: url(../images/social-icon/social-icon-telegram.svg);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+}
+
+.social-yt {
+    background-image: url(../images/social-icon/social-icon-youtube.svg);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+}
+
 
 .footer-phone {
     font-size: 40px;
