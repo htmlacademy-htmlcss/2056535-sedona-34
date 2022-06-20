@@ -92,7 +92,8 @@ ol, ul {
     max-width: 400px;
     display: flex;
     flex-wrap: wrap;
-    align-items: center;    
+    align-items: center;
+    justify-content: flex-end;
 }
 
 .navigation-item:not(:last-child) {
@@ -110,12 +111,6 @@ ol, ul {
     padding: 22px 10px;
 }
 
-.navigation-user .navigation-link {
-    display: block;
-    min-width: 18px;
-    min-height: 18px;
-}
-
 .navigation-btn {
     font-weight: 700;
     font-size: 16px;
@@ -128,6 +123,26 @@ ol, ul {
     width: 160px;
     border-radius: 4px;
     padding: 9px 30px;
+}
+
+.search-icon {
+    display: block;
+    min-width: 18px;
+    height: 100%;
+    background-image: url(../images/icon/icon-search.svg);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    margin-right: -10px;
+}
+
+.heart-icon {
+    display: block;
+    min-width: 18px;
+    height: 100%;
+    background-image: url(../images/icon/icon-heart.svg);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    margin-right: 10px;
 }
 
 /*Мэйн*/
@@ -146,6 +161,7 @@ ol, ul {
     background-color: #FFFFFF;
     padding: 51px 371px 72px 371px;
 }
+
 
 .main-logo {
     display: block;
