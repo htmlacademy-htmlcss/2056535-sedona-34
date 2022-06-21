@@ -20,7 +20,6 @@
 }
 */
 
-
 body {
     margin: 0 auto;
     width: 1200px;
@@ -483,6 +482,10 @@ input[type=email] {
     margin-right: 70px;
 }
 
+.ranking {
+    max-width: 290px;
+}
+
 .catalog-filter-list {
     margin: 0;
     padding: 0;
@@ -493,7 +496,19 @@ input[type=email] {
     padding-bottom: 15px;
 }
 
+.catalog-button-list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
 .btn-filter {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
     background-color: #82B3D3;
     color:#FFFFFF;
     font-family: inherit;
@@ -514,7 +529,9 @@ input[type=reset].btn-filter-reset {
     background-color: rgba(1, 1, 1, 0);
     font-family: inherit;
     border: none;
+    display: block;
 }
+
 /*Сортировка состояний страницы*/
 
 .sorting-wrapper {
@@ -569,18 +586,29 @@ input[type=reset].btn-filter-reset {
     background-color: #FFFFFF;
 }
 
+.cards-list-wrapper {
+    margin-left: 72px;
+    margin-right: 72px;
+}
+
 .product-list {
     display: flex;
     flex-wrap: wrap;
-    margin-left: 72px;
-    margin-right: 72px;
-    gap: 18px;
+    gap: 0 18px;
+}
+
+.prod-card-img {
+    display: block;
 }
 
 .product-card-title {
+    max-width: 300px;
     font-size: 24px;
     line-height: 28px;
     color: #000000;
+    margin: 0;
+    margin-bottom: 16px;
+    margin-top: 16px;
 }
 
 .products-card-link {
@@ -588,8 +616,25 @@ input[type=reset].btn-filter-reset {
 }
 
 .product-card {
-    width: 340px;
+    width: 300px;
+    padding: 20px;
 }
+
+.product-card-info {
+    display: grid;
+    grid-template-columns: 140px 140px;
+    gap: 16px 20px;
+}
+
+.btn {
+    display: block;
+    padding: 9px 15px;
+    border-radius: 4px;
+    max-width: 110px;
+    max-height: 20px;
+    text-align: center;
+}
+
 .btn-more {
     background-color: #756157;
     color:#FFFFFF;
@@ -623,8 +668,34 @@ input[type=reset].btn-filter-reset {
 .final-rating {
     font-size: 16px;
     line-height: 20px;
+    text-transform: uppercase;
     background-color: #F2F2F2;
     color: #333333;
+    border-radius: 4px;
+    max-width: 95px;
+    max-height: 20px;
+    padding: 9px 22px;
+}
+
+.stars-rating {
+    display: flex;
+    align-items: center;
+    max-width: 140px;
+}
+
+.star {
+    display: block;
+    width: 18px;
+    height: 17px;
+    background-image: url(../images/icon/blue-star.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin-right: 6px;
+}
+
+.star:last-child {
+    margin-right: 0;
 }
 
 /*Подписка*/
