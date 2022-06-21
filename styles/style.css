@@ -590,6 +590,12 @@ input[type=reset].btn-filter-reset {
     width: 340px;
 }
 
+.product-card-info {
+    display: grid;
+    grid-template-columns: 140px 140px;
+    gap: 20px;
+}
+
 .btn {
     display: block;
     padding: 9px 15px;
