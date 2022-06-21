@@ -482,6 +482,10 @@ input[type=email] {
     margin-right: 70px;
 }
 
+.ranking {
+    max-width: 290px;
+}
+
 .catalog-filter-list {
     margin: 0;
     padding: 0;
@@ -492,7 +496,19 @@ input[type=email] {
     padding-bottom: 15px;
 }
 
+.catalog-button-list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
 .btn-filter {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
     background-color: #82B3D3;
     color:#FFFFFF;
     font-family: inherit;
@@ -513,7 +529,9 @@ input[type=reset].btn-filter-reset {
     background-color: rgba(1, 1, 1, 0);
     font-family: inherit;
     border: none;
+    display: block;
 }
+
 /*Сортировка состояний страницы*/
 
 .sorting-wrapper {
