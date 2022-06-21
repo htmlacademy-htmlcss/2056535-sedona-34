@@ -20,7 +20,6 @@
 }
 */
 
-
 body {
     margin: 0 auto;
     width: 1200px;
@@ -590,6 +589,16 @@ input[type=reset].btn-filter-reset {
 .product-card {
     width: 340px;
 }
+
+.btn {
+    display: block;
+    padding: 9px 15px;
+    border-radius: 4px;
+    max-width: 110px;
+    max-height: 20px;
+    text-align: center;
+}
+
 .btn-more {
     background-color: #756157;
     color:#FFFFFF;
@@ -623,8 +632,34 @@ input[type=reset].btn-filter-reset {
 .final-rating {
     font-size: 16px;
     line-height: 20px;
+    text-transform: uppercase;
     background-color: #F2F2F2;
     color: #333333;
+    border-radius: 4px;
+    max-width: 95px;
+    max-height: 20px;
+    padding: 9px 22px;
+}
+
+.stars-rating {
+    display: flex;
+    align-items: center;
+    max-width: 140px;
+}
+
+.star {
+    display: block;
+    width: 18px;
+    height: 17px;
+    background-image: url(../images/icon/blue-star.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin-right: 6px;
+}
+
+.star:last-child {
+    margin-right: 0;
 }
 
 /*Подписка*/
