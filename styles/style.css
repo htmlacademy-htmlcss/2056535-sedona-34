@@ -67,6 +67,11 @@ ol, ul {
 }
 
 /* Навигация*/
+.main-header-logo {
+    width: 139px;
+    height: 100%;
+    position: relative;
+}
 
 .main-header-logo-link {
     display: block;
@@ -483,6 +488,7 @@ input[type=email] {
 }
 
 .ranking {
+    margin-left: 105px;
     max-width: 290px;
 }
 
