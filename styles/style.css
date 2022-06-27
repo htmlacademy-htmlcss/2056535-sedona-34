@@ -67,20 +67,17 @@ ol, ul {
 }
 
 /* Навигация*/
-.main-header-logo {
-    width: 139px;
-    height: 100%;
-    position: relative;
-}
 
 .main-header-logo-link {
     display: block;
     align-self: flex-start;
     margin-right: 40px;
+    position: absolute;
 }
 
 .navigation {
     margin-right: auto;
+    margin-left: 169px;
 }
 
 .navigation-list {
@@ -89,7 +86,7 @@ ol, ul {
     list-style-type: none;
     display: flex;
     flex-wrap: wrap;
-    max-width: 420px;
+    width: 600px;
 }
 
 .navigation-user {
@@ -97,6 +94,7 @@ ol, ul {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
+    margin-left: auto;
     justify-content: flex-end;
 }
 
@@ -112,7 +110,7 @@ ol, ul {
     text-decoration: none;
     color: inherit;
     text-align: center;
-    padding: 22px 10px;
+    padding: 19px 10px;
 }
 
 .navigation-btn {
