@@ -100,7 +100,7 @@ ol, ul {
 }
 
 .navigation-item:not(:last-child) {
-    margin-right: 13px;
+    margin-right: 34px;
 }
 
 .navigation-link {
@@ -111,25 +111,11 @@ ol, ul {
     text-decoration: none;
     color: inherit;
     text-align: center;
-    padding: 19px 10px;
+    padding: 19px 0;
 }
 
 .navigation-link-current {
     border-bottom: 2px solid #756257;
-}
-
-.navigation-btn {
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 20px;
-    text-transform: uppercase;
-    text-decoration: none;
-    text-align: center;
-    background-color: #756157;
-    color: #FFFFFF;
-    width: 160px;
-    border-radius: 4px;
-    padding: 9px 30px;
 }
 
 .search-icon {
@@ -139,7 +125,7 @@ ol, ul {
     background-image: url(../images/icon/icon-search.svg);
     background-repeat: no-repeat;
     background-position: 50% 50%;
-    margin-right: -10px;
+    margin-right: 24px;
 }
 
 .heart-icon {
@@ -149,7 +135,7 @@ ol, ul {
     background-image: url(../images/icon/icon-heart.svg);
     background-repeat: no-repeat;
     background-position: 50% 50%;
-    margin-right: 10px;
+    margin-right: 24px;
 }
 
 .hearts-count{
@@ -169,6 +155,19 @@ ol, ul {
     z-index: 1;
 }
 
+.navigation-btn {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    text-transform: uppercase;
+    text-decoration: none;
+    text-align: center;
+    background-color: #756157;
+    color: #FFFFFF;
+    width: 160px;
+    border-radius: 4px;
+    padding: 9px 30px;
+}
 
 /*Мэйн*/
 
