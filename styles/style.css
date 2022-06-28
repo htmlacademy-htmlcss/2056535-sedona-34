@@ -261,6 +261,13 @@ ol, ul {
     text-align: center;
 }
 
+.advantages-subtitle::before {
+    content: "— ";
+}
+
+.advantages-subtitle::after {
+    content: " —";
+}
 
 .advantages-list {
     margin: 0;
