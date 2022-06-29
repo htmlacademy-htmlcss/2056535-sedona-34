@@ -543,6 +543,7 @@ input[type=email] {
 
 .breadcrumbs {
     display: flex;
+    align-items: center;
     margin: 0;
     padding: 0;
     list-style-type: none;
@@ -551,6 +552,41 @@ input[type=email] {
 
 .breadcrumbs-link {
     font-size: 16px;
+    line-height: 21px;
+    color: #FFFFFF;
+    position: relative;
+}
+
+.breadcrumbs-home {
+    display: block;
+}
+
+.breadcrumbs-home:hover {
+    fill: #C2C3CC;
+}
+
+.breadcrumbs-home:focus {
+    fill: #FFFFFF
+}
+
+.breadcrumbs-home:active {
+    fill: #B09F96;
+}
+
+.breadcrumbs-current {
+    text-decoration: none;
+}
+
+.breadcrumbs-current:hover {
+    color: #C2C3CC;
+}
+
+.breadcrumbs-current:focus {
+    color: #FFFFFF
+}
+
+.breadcrumbs-current:active {
+    color: #B09F96;
 }
 
 /*Фильтры*/
