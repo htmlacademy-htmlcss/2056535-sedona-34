@@ -561,6 +561,12 @@ input[type=email] {
     display: block;
 }
 
+.breadcrumbs-item:not(:first-child) {
+    background-image: url(../images/icon/breadcrumbs.svg);
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
 .breadcrumbs-home:hover {
     fill: #C2C3CC;
 }
