@@ -722,11 +722,28 @@ input[type=reset].btn-filter-reset {
     width: 48px;
     height: 48px;
     margin-right: 8px;
+    border: 2px solid #E5E5E5;
+    border-radius: 4px;
+}
+
+.link-condition-multiple {
+    background: url(../images/icon/conditions-multiple-cards.svg) no-repeat center;
+    border: 2px solid #000000;
+    border-radius: 4px;
+}
+
+.link-condition-one {
+    background: url(../images/icon/conditions-one-card.svg) no-repeat center;
+}
+
+.link-condition-list {
+    background: url(../images/icon/conditions-list.svg) no-repeat left 40% bottom 50%;
 }
 
 .cards-condition-link:not(:last-child) {
     margin-right: 8px;
 }
+
 
 /*Карточки продуктов*/
 
@@ -871,6 +888,7 @@ input[type=email].input-catalog {
     padding: 30px 72px 25px 72px;
     justify-content: space-between;
     align-items: center;
+    /* border-top: 1px solid #E6E6E6 */
 }
 
 .pagination {
