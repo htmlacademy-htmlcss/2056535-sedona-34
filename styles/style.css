@@ -726,10 +726,13 @@ input[type=reset].btn-filter-reset {
     border-radius: 4px;
 }
 
-.link-condition-multiple {
-    background: url(../images/icon/conditions-multiple-cards.svg) no-repeat center;
+.cards-condition-link-current {
     border: 2px solid #000000;
     border-radius: 4px;
+}
+
+.link-condition-multiple {
+    background: url(../images/icon/conditions-multiple-cards.svg) no-repeat center;
 }
 
 .link-condition-one {
@@ -742,6 +745,18 @@ input[type=reset].btn-filter-reset {
 
 .cards-condition-link:not(:last-child) {
     margin-right: 8px;
+}
+
+.cards-condition-link:hover {
+    border: 2px solid #000000;
+}
+
+.cards-condition-link:focus {
+    border: 2px solid #68A2CA;
+}
+
+.cards-condition-link:active {
+    border: 2px solid #000000;
 }
 
 
