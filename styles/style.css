@@ -548,24 +548,27 @@ input[type=email] {
     padding: 0;
     list-style-type: none;
     margin-bottom: 40px;
+    position: relative;
 }
 
 .breadcrumbs-link {
     font-size: 16px;
     line-height: 21px;
     color: #FFFFFF;
-    position: relative;
 }
 
 .breadcrumbs-home {
     display: block;
 }
 
+/*
 .breadcrumbs-item:not(:first-child) {
     background-image: url(../images/icon/breadcrumbs.svg);
     background-repeat: no-repeat;
     background-position: center center;
+    position: absolute;
 }
+*/
 
 .breadcrumbs-home:hover {
     fill: #C2C3CC;
@@ -703,6 +706,8 @@ input[type=reset].btn-filter-reset {
     font-size: 18px;
     line-height: 21px;
     color: #333333;
+    background: url(../images/icon/icon-arrow.svg) no-repeat left 95% bottom 45%;
+
 }
 
 .cards-condition-list {
@@ -887,12 +892,13 @@ input[type=email].input-catalog {
     font-weight: 700;
     font-size: 20px;
     line-height: 36px;
-    display: block;
     box-sizing: border-box;
     width: 60px;
     height: 60px;
     border-radius: 4px;
-    padding: 12px 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .pagination-current {
@@ -915,4 +921,5 @@ input[type=email].input-catalog {
     font-size: 18px;
     line-height: 21px;
     color: #333333;
+    background: url('../images/icon/icon-arrow.svg') no-repeat left 90% bottom 45%;
 }
