@@ -80,6 +80,7 @@ ol, ul {
     align-self: flex-start;
     margin-right: 40px;
     position: absolute;
+    z-index: 1;
 }
 
 .navigation {
@@ -170,9 +171,8 @@ ol, ul {
     text-align: center;
     background-color: #756157;
     color: #FFFFFF;
-    width: 160px;
     border-radius: 4px;
-    padding: 9px 30px;
+    padding: 9px 34px;
 }
 
 .navigation-btn:hover {
@@ -203,15 +203,22 @@ ol, ul {
     background-repeat: no-repeat;
     background-color: #FFFFFF;
     padding: 51px 371px 72px 371px;
-}
-
-.main-index-logo::after {
-    background: url('../images/index/divider.svg') no-repeat;
+    position: relative;
 }
 
 .main-logo {
     display: block;
     margin: 0 auto;
+}
+
+.main-logo-divider {
+    background: url(../images/index/divider.svg) no-repeat;
+    position: absolute;
+    bottom: 0;
+    right: 0;;
+    z-index: 1;
+    width: 1200px;
+    height: 57px;
 }
 
 .logo-title {
@@ -802,9 +809,12 @@ input[type=reset].btn-filter-reset {
     gap: 16px 20px;
 }
 
+.products-card-image {
+    grid-column: -1/1;
+}
+
 .prod-card-img {
     display: block;
-    grid-column: -1/1;
 }
 
 .products-card-link {
@@ -835,6 +845,19 @@ input[type=reset].btn-filter-reset {
     text-decoration: none;
 }
 
+.btn-more:hover {
+    background-color: #615048;
+}
+.btn-more:active {
+    background-color: #756157;
+    color: #94847D;
+}
+
+.btn-more:disabled {
+    background-color: #E5E5E5;
+    color: #FFFFFF;
+}
+
 .btn-favorite {
     background-color: #82B3D3;
     color:#FFFFFF;
@@ -845,6 +868,19 @@ input[type=reset].btn-filter-reset {
     text-decoration: none;
 }
 
+.btn-favorite:hover {
+    background-color: #68A2CA;
+}
+
+.btn-favorite:active {
+    background-color: #82B3D3;
+    color: #A7CAE0;
+}
+
+.btn-favorite:disabled {
+    background-color: #E5E5E5;
+}
+
 .btn-in-favorite {
     background-color: #7DB54F;
     color:#FFFFFF;
@@ -853,6 +889,19 @@ input[type=reset].btn-filter-reset {
     line-height: 20px;
     text-transform: uppercase;
     text-decoration: none;
+}
+
+.btn-in-favorite:hover {
+    background-color: #6C9E42;
+}
+
+.btn-in-favorite:active {
+    background-color: #6C9E42;
+    color: #A4CB84;
+}
+
+.btn-in-favorite:disabled {
+    background-color: #E5E5E5;
 }
 
 .final-rating {
