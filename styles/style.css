@@ -1063,3 +1063,11 @@ input[type=email].input-catalog {
     background-position: center;
     cursor: pointer;
 }
+
+.modal-title {
+    text-transform: uppercase;
+    font-size: 30px;
+    line-height: 36px;
+    font-weight: 700;
+    
+}
