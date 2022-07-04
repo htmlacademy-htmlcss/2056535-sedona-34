@@ -550,28 +550,30 @@ input[type=email] {
 /*Хлебные крошки*/
 
 .breadcrumbs {
-    display: flex;
-    align-items: center;
     margin: 0;
     padding: 0;
     list-style-type: none;
+    display: flex;
+    align-items: center;
     margin-bottom: 40px;
-    position: relative;
 }
-
+.breadcrumbs-item {
+    position: relative;
+    margin-right: 10px;
+    font-size: 16px;
+    line-height: 21px;
+}
 .breadcrumbs-link {
     font-size: 16px;
     line-height: 21px;
     color: #FFFFFF;
-}
-
-.breadcrumbs-home {
     display: block;
+    position: relative;
 }
 
 .breadcrumbs-item::after {
     content:'';
-    background: url(../images/icon/breadcrumbs.svg) no-repeat center;
+    background: url(../images/icon/breadcrumbs-white.svg) no-repeat center;
 }
 
 .breadcrumbs-home:hover {
