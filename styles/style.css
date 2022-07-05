@@ -1027,6 +1027,9 @@ input[type=email].input-catalog {
     background: url('../images/icon/icon-arrow.svg') no-repeat left 90% bottom 45%;
 }
 
+
+/*Модальное окно*/
+
 .modal-window {
     position: fixed;
     top: 0;
@@ -1047,6 +1050,11 @@ input[type=email].input-catalog {
 
 .modal-booking {
     width: 715px;
+}
+
+.modal-search-form {
+    display: grid;
+    grid-template-columns: 155px 1fr 1fr 1fr;
 }
 
 .modal-title {
@@ -1082,6 +1090,17 @@ input[type=email].input-catalog {
     color: #333333;
 }
 
+input[type=text].modal-date {
+    font-family: inherit;
+    font-size: 18px;
+    line-height: 21px;
+    background-color: #F2F2F2;
+    color:#000000;
+    border: none;
+    border-radius: 4px;
+    padding: 15px 178px 14px 19px;
+}
+
 .modal-date-error {
     font-size: 16px;
     line-height: 21px;
@@ -1094,7 +1113,9 @@ input[type=email].input-catalog {
     color: #333333;
 }
 
-input[type=text].modal-date {
+
+
+input[type=number].visiters-number {
     font-family: inherit;
     font-size: 18px;
     line-height: 21px;
@@ -1102,7 +1123,10 @@ input[type=text].modal-date {
     color:#000000;
     border: none;
     border-radius: 4px;
-    padding: 15px 178px 14px 19px;
+    margin: 0;
+    padding: 0;
+    max-width: 133px;
+    text-align: center;
 }
 
 /* .modal-search-form {
@@ -1150,4 +1174,14 @@ input[type=text].modal-date {
     border-radius: 10px;
     width: 256px;
     display: none;
+}
+
+.visiters-number::-webkit-outer-spin-button,
+.visiters-number::-webkit-inner-spin-button {
+    margin: 0;
+    appearance: none;
+}
+
+.visiters-number {
+    -moz-appearance: textfield;
 }

@@ -199,43 +199,76 @@
       </a>
   </footer>
 
+<!-- Модальное окно-->
+
     <div class="modal-window">
       <div class="modal modal-booking">
         <button class="modal-close-button">
           <span class="visually-hidden">Закрыть</span>
         </button>
         <section class="modal-content">
-            <h2 class="modal-title">Поиск гостиницы в седоне</h2>
+          <h2 class="modal-title">Поиск гостиницы в седоне</h2>
             <form class="modal-search-form" action="https://echo.htmlacademy.ru/" >
-
               <label class="modal-label" for="arrival-date">Дата заезда:</label>
                 <input class="modal-date" type="text" placeholder="27 апреля 2020" id="arrival-date">
+                <button class="date-btn" type="button">
+                  <svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M7.86 12c.3 0 .5-.2.5-.5s-.2-.5-.5-.5-.5.2-.5.5.2.5.5.5Z" fill="currentColor"/>
+                    <path d="M17.11 4h-2V2h-1v2h-8V2h-1v2h-2c-.6 0-1 .4-1 1v11c0 .5.4 1 1 1h14c.5 0 1-.5 1-1V5c0-.6-.5-1-1-1Zm0 12h-14V9h14v7Zm-14-8V5h2v2h1V5h8v2h1V5h2v3h-14Z" fill="currentColor"/>
+                    <path d="M10.11 12c.3 0 .5-.2.5-.5s-.2-.5-.5-.5-.5.2-.5.5.2.5.5.5ZM12.36 12c.3 0 .5-.2.5-.5s-.2-.5-.5-.5-.5.2-.5.5.2.5.5.5ZM7.86 13c-.3 0-.5.2-.5.5s.2.5.5.5.5-.2.5-.5-.2-.5-.5-.5ZM5.61 12c.3 0 .5-.2.5-.5s-.2-.5-.5-.5-.5.2-.5.5.2.5.5.5ZM5.61 13c-.3 0-.5.2-.5.5s.2.5.5.5.5-.2.5-.5-.2-.5-.5-.5ZM10.11 13c-.3 0-.5.2-.5.5s.2.5.5.5.5-.2.5-.5-.2-.5-.5-.5ZM12.36 13c-.3 0-.5.2-.5.5s.2.5.5.5.5-.2.5-.5-.2-.5-.5-.5ZM14.61 12c.3 0 .5-.2.5-.5s-.2-.5-.5-.5-.5.2-.5.5.2.5.5.5ZM14.61 13c-.3 0-.5.2-.5.5s.2.5.5.5.5-.2.5-.5-.2-.5-.5-.5Z" fill="currentColor"/>
+                  </svg>
+                </button>
                 <p class="modal-date-error">Мы не можем отправить вас в прошлое.</p>
-
               <label class="modal-label" for="departure-date">Дата выезда:</label>
                 <input class="modal-date" type="text" placeholder="1 сентября 2021" id="departure-date">
+                <button class="date-btn" type="button">
+                  <svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M7.86 12c.3 0 .5-.2.5-.5s-.2-.5-.5-.5-.5.2-.5.5.2.5.5.5Z" fill="currentColor"/>
+                    <path d="M17.11 4h-2V2h-1v2h-8V2h-1v2h-2c-.6 0-1 .4-1 1v11c0 .5.4 1 1 1h14c.5 0 1-.5 1-1V5c0-.6-.5-1-1-1Zm0 12h-14V9h14v7Zm-14-8V5h2v2h1V5h8v2h1V5h2v3h-14Z" fill="currentColor"/>
+                    <path d="M10.11 12c.3 0 .5-.2.5-.5s-.2-.5-.5-.5-.5.2-.5.5.2.5.5.5ZM12.36 12c.3 0 .5-.2.5-.5s-.2-.5-.5-.5-.5.2-.5.5.2.5.5.5ZM7.86 13c-.3 0-.5.2-.5.5s.2.5.5.5.5-.2.5-.5-.2-.5-.5-.5ZM5.61 12c.3 0 .5-.2.5-.5s-.2-.5-.5-.5-.5.2-.5.5.2.5.5.5ZM5.61 13c-.3 0-.5.2-.5.5s.2.5.5.5.5-.2.5-.5-.2-.5-.5-.5ZM10.11 13c-.3 0-.5.2-.5.5s.2.5.5.5.5-.2.5-.5-.2-.5-.5-.5ZM12.36 13c-.3 0-.5.2-.5.5s.2.5.5.5.5-.2.5-.5-.2-.5-.5-.5ZM14.61 12c.3 0 .5-.2.5-.5s-.2-.5-.5-.5-.5.2-.5.5.2.5.5.5ZM14.61 13c-.3 0-.5.2-.5.5s.2.5.5.5.5-.2.5-.5-.2-.5-.5-.5Z" fill="currentColor"/>
+                  </svg>
+                </button>
                 <p class="modal-date-info">На эти даты есть свободные номера. Пока есть.</p>
-
-              <p class="modal-count">
-                <label class="modal-label">
-                  Взрослые:
-                  <input class="visiters-number" type="number" name="number" value="2">
-                </label>
-                <span class="modal-label">
-                  <label class="modal-label" for="children-count">
-                    Дети:
-                  <span class="modal-tooltip">
-                    <button class="tooltip-toggle" type="button" aria-labelledby="tooltip-label">
-                      <svg class="tooltip-icon" width="21" height="20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M9.11 4h2v2h-2V4Zm2 12h-2V7h2v9Z" fill="currentColor"/></svg>
-                    </button>
-                    <span class="tooltip-text" role="tooltip" id="tooltip-label">
-                      Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.
+              <label class="modal-label" for="adult-visitors">Взрослые:</label>
+                <div class="visitors-wrapper">
+                  <button class="plus-minus-btn" type="button">
+                    <svg class="minus-icon" width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M3.11 9v2h14V9h-14Z" fill="currentColor"/>
+                    </svg>
+                  </button>
+                <input class="visiters-number" type="number" name="number" value="2" id="adult-visitors">
+                  <button class="plus-minus-btn" type="button">
+                    <svg class="plus-icon" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M17 9h-6V3H9v6H3v2h6v6h2v-6h6V9Z" fill="currentColor"/>
+                    </svg>
+                  </button>
+                </div>
+              <span class="modal-label">
+                <label class="modal-label" for="children-count">Дети:</label>
+                  <div class="visitors-wrapper">
+                    <span class="modal-tooltip">
+                      <button class="tooltip-toggle" type="button" aria-labelledby="tooltip-label">
+                        <svg class="tooltip-icon" width="21" height="20" xmlns="http://www.w3.org/2000/svg">
+                          <path fill-rule="evenodd" clip-rule="evenodd" d="M9.11 4h2v2h-2V4Zm2 12h-2V7h2v9Z" fill="currentColor"/>
+                        </svg>
+                      </button>
+                      <span class="tooltip-text" role="tooltip" id="tooltip-label">
+                        Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.
+                      </span>
                     </span>
                   </span>
-                </span>
-                  <input class="visiters-number" id="children-count" type="number" name="number" value="1">
-              </p>
-
+                      <button class="plus-minus-btn" type="button">
+                        <svg class="minus-icon" width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M3.11 9v2h14V9h-14Z" fill="currentColor"/>
+                        </svg>
+                      </button>
+                      <input class="visiters-number" id="children-count" type="number" name="number" value="1">
+                      <button class="plus-minus-btn" type="button">
+                        <svg class="plus-icon" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M17 9h-6V3H9v6H3v2h6v6h2v-6h6V9Z" fill="currentColor"/>
+                        </svg>
+                      </button>
+                  </div>
               <button class="modal-search-btn" type="submit">Найти</button>
 
             </form>
