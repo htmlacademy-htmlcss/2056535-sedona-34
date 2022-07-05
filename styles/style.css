@@ -1040,19 +1040,29 @@ input[type=email].input-catalog {
 .modal {
     position: relative;
     margin: auto;
-    padding: 40px;
     background-color: #FFFFFF;
+    border-radius: 30px;
+    padding: 70px;
 }
 
 .modal-booking {
     width: 715px;
 }
 
+.modal-title {
+    text-transform: uppercase;
+    font-size: 30px;
+    line-height: 36px;
+    font-weight: 700;
+    margin: 0;
+    margin-bottom: 63px;
+}
+
 .modal-close-button {
     position: absolute;
     padding: 0;
-    top: 0;
-    right: 0;
+    top: 62px;
+    right: 90px;
     width: 53px;
     height: 53px;
     background-color: #F2F2F2;
@@ -1064,13 +1074,47 @@ input[type=email].input-catalog {
     cursor: pointer;
 }
 
-.modal-title {
-    text-transform: uppercase;
-    font-size: 30px;
-    line-height: 36px;
+.modal-label {
+    font-size: 20px;
+    line-height: 26px;
     font-weight: 700;
-    
+    text-transform: capitalize;
+    color: #333333;
 }
+
+.modal-date-error {
+    font-size: 16px;
+    line-height: 21px;
+    color: #FF5757;
+}
+
+.modal-date-info {
+    font-size: 16px;
+    line-height: 21px;
+    color: #333333;
+}
+
+input[type=text].modal-date {
+    font-family: inherit;
+    font-size: 18px;
+    line-height: 21px;
+    background-color: #F2F2F2;
+    color:#000000;
+    border: none;
+    border-radius: 4px;
+    padding: 15px 178px 14px 19px;
+}
+
+/* .modal-search-form {
+    display: grid;
+    grid-template-columns: 1fr 420px;
+    gap: 42px 40px;
+}
+
+.modal-search-btn {
+    grid-column: -1/1;
+}
+*/
 
 .modal-tooltip {
     position: absolute;
@@ -1079,8 +1123,6 @@ input[type=email].input-catalog {
 }
 
 .tooltip-toggle {
-    border: none;
-    background-color: transparent;
     padding: 0;
     margin: 0;
     display: block;
@@ -1095,6 +1137,7 @@ input[type=email].input-catalog {
     display: block;
     color: #FFFFFF;
 }
+
 
 .tooltip-text {
     display: block;
