@@ -109,16 +109,33 @@
               </li>
             </ul>
           </fieldset>
-          <fieldset class="catalog-filter-group ranking">
+
+          <fieldset class="catalog-filter-group">
             <legend class="catalog-filter-title">Стоимость, Р:</legend>
-            <div class="cost-container">
-              <input class="min-cost" type="text" value="0">
-              <span class="cost-range-text">от</span>
-              <input class="max-cost" type="text" value="9000">
-              <span class="cost-range-text">до</span>
-              <div class="cost-range"></div>
-            </div>
+            <ul class="catalog-filter-list">
+              <li class="catalog-filter-item input-wrapper">
+                <label class="input-label"><span class="visually-hidden">Цена от</span>
+                  <input class="input-number start-number" type="number"  name="price" min="0" max="9000" placeholder="0">
+                  <span class="placeholder-text">от</span>
+                </label>
+                <label class="input-label"><span class="visually-hidden">Цена до</span>
+                  <input class="input-number end-number" type="number"  name="price" min="0" max="9000" placeholder="9000">
+                  <span class="placeholder-text">до</span>
+                </label>
+              </li>
+              <li class="catalog-filter-item range-scale">
+                <div class="range-bar" style="width: 79%;">
+                  <button class="range-toggle toggle-min" type="button">
+                    <span class="visually-hidden">Изменить минимальную цену.</span>
+                  </button>
+                  <button class="range-toggle toggle-max" type="button">
+                    <span class="visually-hidden">Изменить максимальную цену.</span>
+                  </button>
+                </div>
+              </li>
+            </ul>
           </fieldset>
+
             <ul class="catalog-button-list">
               <li class="catalog-button-item">
                 <button class="btn-filter" type="submit">Применить</button>
