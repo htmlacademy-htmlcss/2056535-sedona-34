@@ -1262,7 +1262,8 @@ input[type=text].modal-date::placeholder:active {
 }
 
 .modal-tooltip {
-    position: relative;
+    position: absolute;
+    right: 210px;
 }
 
 .tooltip-toggle {
@@ -1334,6 +1335,7 @@ input[type=text].modal-date::placeholder:active {
     border-radius: 4px;
     align-items: center;
     max-width: 133px;
+    justify-content: space-evenly;
 }
 
 .count-label-wrapper {
@@ -1354,8 +1356,6 @@ input[type=text].modal-date::placeholder:active {
     font: inherit;
     color: inherit;
     cursor: pointer;
-    padding-left: 19px;
-    padding-right: 19px;
 }
 
 input[type=number].visiters-number {
