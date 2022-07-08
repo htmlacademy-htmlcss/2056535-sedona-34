@@ -1123,6 +1123,7 @@ input[type=email].input-catalog {
     width: 100%;
     height: 100%;
     background-color: rgba(242, 242, 242, 0.8);
+    display: none;
 }
 
 .modal {
@@ -1281,11 +1282,7 @@ input[type=text].modal-date::placeholder:active {
     background-color: #82B3D3;
     border: none;
     border-radius: 50%;
-}
-
-.tooltip-toggle:hover
-.tooltip-toggle:focus {
-    background-color: #68A2CA;
+    cursor: help;
 }
 
 .tooltip-text {
@@ -1317,10 +1314,16 @@ input[type=text].modal-date::placeholder:active {
     margin-right: auto;
 }
 
+.tooltip-toggle:hover
+.tooltip-toggle:focus {
+    background-color: #68A2CA;
+}
+
 .tooltip-toggle:hover + .tooltip-text
 .tooltip-toggle:focus + .tooltip-text {
     display: block;
 }
+
 
 .visiters-number::-webkit-outer-spin-button,
 .visiters-number::-webkit-inner-spin-button {
