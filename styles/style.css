@@ -1182,7 +1182,6 @@ input[type=email].input-catalog {
 }
 
 
-
 .modal-label {
     font-size: 20px;
     line-height: 26px;
@@ -1228,29 +1227,25 @@ input[type=text].modal-date:active {
 }
 
 input[type=text].modal-date::placeholder {
-    text-overflow: ellipsis;
     font-family: inherit;
     font-weight: 700;
     font-size: 18px;
     line-height: 21px;
-    background-color: #F2F2F2;
     color:#616161;
 }
 
 input[type=text].modal-date::placeholder:hover {
-    background-color: transparent;
     color: #5C5C5C;
 }
 
 input[type=text].modal-date::placeholder:hover {
-    background-color: transparent;
     color: #5C5C5C;
 }
 
 input[type=text].modal-date::placeholder:active {
-    background-color: transparent;
     color: #000000;
 }
+
 
 .modal-date-error {
     font-size: 16px;
@@ -1266,68 +1261,34 @@ input[type=text].modal-date::placeholder:active {
     grid-column: 2/5;
 }
 
-.modal-search-btn {
-    grid-column: 1/5;
-    display: block;
-    font-family: inherit;
-    font-weight: 700;
-    font-size: 20px;
-    line-height: 36px;
-    text-transform: uppercase;
-    background-color: #82B3D3;
-    color: #FFFFFF;
-    max-width: 575px;
-    border: none;
-    border-radius: 10px;
-    padding: 12px 15px;
-    margin-top: 40px;
-}
-
-input[type=number].visiters-number {
-    font-family: inherit;
-    font-size: 18px;
-    line-height: 21px;
-    background-color: transparent;
-    color:#000000;
-    border: none;
-    border-radius: 4px;
-    margin: 0;
-    padding: 0;
-    padding-top: 15px;
-    padding-bottom: 15px;
-    padding-left: 10px;
-    padding-right: 10px;
-    width: 33px;
-    text-align: center;
-}
-
 .modal-tooltip {
-    position: absolute;
-    width: 25px;
-    height: 25px;
-    bottom: 180px;
-    right: 228px;
+    position: relative;
 }
 
 .tooltip-toggle {
     padding: 0;
     margin: 0;
+    position: absolute;
+    top: -10px;
+    right: 15px;
     display: block;
+    width: 25px;
+    height: 25px;
+    background-image: url(../images/icon/icon-info-white.svg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 1px 9px;
+    background-color: #82B3D3;
     border: none;
     border-radius: 50%;
-    background-color: #82B3D3;
 }
 
-.tooltip-icon {
-    width: 100%;
-    height: 100%;
-    display: block;
-    color: #FFFFFF;
+.tooltip-toggle:hover
+.tooltip-toggle:focus {
+    background-color: #000000;
 }
-
 
 .tooltip-text {
-    display: block;
     text-transform: none;
     font-size: 16px;
     line-height: 21px;
@@ -1336,6 +1297,29 @@ input[type=number].visiters-number {
     padding: 15px 18px 18px 22px;
     border-radius: 10px;
     width: 256px;
+    position: absolute;
+    top: 30px;
+    left: -155px;
+    display: block;
+    z-index: 1;
+}
+
+.tooltip-text::after {
+    content:'';
+    background-image: url("../images/icon/tooltip-arrow.svg");
+    width: 19px;
+    height: 9px;
+    position:absolute;
+    bottom: 100%;
+    left:0;
+    right:0;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.tooltip-toggle:hover + .tooltip-text
+.tooltip-toggle:focus + .tooltip-text {
+    display: block;
 }
 
 .visiters-number::-webkit-outer-spin-button,
@@ -1349,6 +1333,7 @@ input[type=number].visiters-number {
     display: flex;
     border-radius: 4px;
     align-items: center;
+    max-width: 133px;
 }
 
 .count-label-wrapper {
@@ -1373,9 +1358,44 @@ input[type=number].visiters-number {
     padding-right: 19px;
 }
 
+input[type=number].visiters-number {
+    font-family: inherit;
+    font-size: 18px;
+    line-height: 21px;
+    background-color: transparent;
+    color:#000000;
+    border: none;
+    border-radius: 4px;
+    margin: 0;
+    padding: 0;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 10px;
+    padding-right: 10px;
+    width: 33px;
+    text-align: center;
+}
+
 .visiters-number::placeholder {
     font-family: inherit;
     font-size: 18px;
     line-height: 21px;
     font-weight: 400;
+}
+
+.modal-search-btn {
+    grid-column: 1/5;
+    display: block;
+    font-family: inherit;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 36px;
+    text-transform: uppercase;
+    background-color: #82B3D3;
+    color: #FFFFFF;
+    max-width: 575px;
+    border: none;
+    border-radius: 10px;
+    padding: 12px 15px;
+    margin-top: 40px;
 }
