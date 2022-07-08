@@ -1181,7 +1181,6 @@ input[type=email].input-catalog {
     background-color: #E6E6E6;
 }
 
-
 .modal-label {
     font-size: 20px;
     line-height: 26px;
@@ -1286,7 +1285,7 @@ input[type=text].modal-date::placeholder:active {
 
 .tooltip-toggle:hover
 .tooltip-toggle:focus {
-    background-color: #000000;
+    background-color: #68A2CA;
 }
 
 .tooltip-text {
@@ -1301,7 +1300,7 @@ input[type=text].modal-date::placeholder:active {
     position: absolute;
     top: 30px;
     left: -155px;
-    display: block;
+    display: none;
     z-index: 1;
 }
 
@@ -1351,12 +1350,39 @@ input[type=text].modal-date::placeholder:active {
 
 .plus-minus-btn {
     padding: 0;
+    width: 25px;
+    height: 25px;
     border: none;
     background-color: transparent;
     font: inherit;
     color: inherit;
     cursor: pointer;
 }
+
+.plus-minus-btn:focus {
+    border: 3px solid #83B3D3;
+    border-radius: 4px;
+}
+
+.minus-icon, .plus-icon {
+    color: #B3B3B3;
+}
+
+.minus-icon:hover, .plus-icon:hover {
+    color: #000000;
+}
+
+.minus-icon:focus, .plus-icon:focus {
+    border: none;
+    color: #000000;
+}
+
+.minus-icon:active, .plus-icon:active {
+    border: none;
+    color: #CCCCCC;
+}
+
+
 
 input[type=number].visiters-number {
     font-family: inherit;
@@ -1398,4 +1424,17 @@ input[type=number].visiters-number {
     border-radius: 10px;
     padding: 12px 15px;
     margin-top: 40px;
+}
+
+.modal-search-btn:hover {
+    background-color: #68A2CA;
+}
+
+.modal-search-btn:focus {
+    border: 3px solid #756257;
+}
+
+.modal-search-btn:active {
+    color: #95BEDA;
+    border: none;
 }
