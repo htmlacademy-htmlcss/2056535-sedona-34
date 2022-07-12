@@ -20,12 +20,6 @@
     font-display: swap;
 }
 
-/*
-*{
-    outline: 1px solid #6315e2;
-}
-*/
-
 body {
     margin: 0 auto;
     width: 1200px;
@@ -95,6 +89,7 @@ ol, ul {
     display: flex;
     flex-wrap: wrap;
     width: 600px;
+    margin-left: 15px;
 }
 
 .navigation-user {
@@ -142,7 +137,7 @@ ol, ul {
     background-image: url(../images/icon/icon-heart.svg);
     background-repeat: no-repeat;
     background-position: 50% 50%;
-    margin-right: 24px;
+    margin-right: 30px;
 }
 
 .hearts-count{
@@ -202,7 +197,7 @@ ol, ul {
     background-image: url(../images/index/index-background.jpg);
     background-repeat: no-repeat;
     background-color: #FFFFFF;
-    padding: 51px 371px 72px 371px;
+    padding: 51px 371px 82px 371px;
     position: relative;
 }
 
@@ -215,7 +210,7 @@ ol, ul {
     background: url(../images/index/divider.svg) no-repeat;
     position: absolute;
     bottom: 0;
-    right: 0;;
+    right: 0;
     z-index: 0;
     width: 1200px;
     height: 57px;
@@ -224,9 +219,7 @@ ol, ul {
 .logo-title {
     display: block;
     text-align: center;
-    padding: 64px 270px 90px 270px;
-    /* max-width: 660px;
-    margin: 0; */
+    padding: 42px 270px 68px 270px;
 }
 
 .main-index-title {
@@ -239,6 +232,7 @@ ol, ul {
     font-size: 22px;
     line-height: 26px;
     text-align: center;
+    margin-top: 30px;
 }
 
 /*Список преимуществ */
@@ -278,7 +272,15 @@ ol, ul {
 .advantages-content-description {
     /* max-width: 230px; */
     margin: 0;
-    padding: 92px 85px;
+    padding: 70px 85px;
+}
+
+.more-pad {
+    padding: 80px 85px;
+}
+
+.advantages-icon:not(:nth-child(3)) {
+    margin-top: 10px;
 }
 
 .advantages-image {
@@ -291,6 +293,25 @@ ol, ul {
     text-transform: uppercase;
     text-align: center;
     max-width: 230px;
+    padding-bottom: 5px;
+    margin-bottom: 25px;
+}
+
+.souvenirs-title {
+    margin-top: 25px;
+}
+
+.advantages-subtitle {
+    margin-bottom: 20px;
+}
+
+.advantages-description {
+    margin-top: 30px;
+    padding-bottom: 40px;
+}
+
+.sub-description {
+    margin-top: -5px;
 }
 
 .advantages-subtitle::before {
@@ -362,6 +383,8 @@ ol, ul {
     text-align: center;
     padding: 12px 15px;
     border-radius: 4px;
+    max-width: 574px;
+    margin-left: 9px;
 }
 
 .btn-search:hover {
@@ -384,7 +407,8 @@ ol, ul {
     background-repeat: no-repeat;
     background-color: #FFFFFF;
     background-size: 100% auto;
-    padding: 94px 200px;
+    padding: 69px 200px;
+    padding-bottom: 98px;
 }
 
 .subscribe-title{
@@ -424,6 +448,7 @@ input[type=email] {
 .btn-subscribe {
     background-color: #82B3D3;
     font-weight: 700;
+    font-family: inherit;
     font-size: 20px;
     line-height: 36px;
     text-transform: uppercase;
@@ -466,6 +491,7 @@ input[type=email] {
     width: 144px;
     height: 44px;
     margin-right: 216px;
+    margin-left: 12px;
 }
 
 .social-item {
@@ -497,8 +523,9 @@ input[type=email] {
     text-decoration: none;
     color: #000000;
     display: block;
-    width: 332px;
+    width: 336px;
     margin-right: 236px;
+    padding-left: 5px;
 }
 
 .footer-phone:visited {
@@ -532,7 +559,6 @@ input[type=email] {
 }
 
 /*Страница каталога*/
-
 
 .main-inner {
     background-color: #FFFFFF;
@@ -621,8 +647,6 @@ input[type=email] {
     background-repeat: no-repeat;
 }
 
-
-
 /*Фильтры*/
 
 .catalog-filter {
@@ -639,6 +663,7 @@ input[type=email] {
     line-height: 26px;
     font-weight: 700;
     margin-bottom: 30px;
+    text-transform: capitalize;
 }
 
 .catalog-filter-form {
@@ -649,14 +674,18 @@ input[type=email] {
     border: none;
     padding: 0;
     margin: 0;
-    margin-right: 70px;
+    margin-right: 66px;
 }
 
 .catalog-filter-group:nth-child(2) {
     border: none;
     padding: 0;
     margin: 0;
-    margin-right: 175px;
+    margin-right: 176px;
+}
+
+.catalog-filter-group:nth-child(3) {
+    margin-right: 70px;
 }
 
 .catalog-filter-list {
@@ -711,13 +740,14 @@ input[type=email] {
 .radio:checked + .catalog-radio::before {
     content: '';
     position: absolute;
-    top: 30%;
+    top: 25%;
     left: 25%;
     width: 10px;
     height: 10px;
     border-radius: 50%;
     background-color: #3F5E72;
 }
+
 /*Range bar*/
 
 .input-wrapper {
@@ -748,7 +778,6 @@ input[type=email] {
 .input-number {
     -moz-appearance: textfield;
 }
-
 
 .start-number {
     border-right: none;
@@ -790,7 +819,7 @@ input[type=email] {
     position: absolute;
     top: 25%;
     right: 10%;
-    color: #c9c6c6;
+    color: #686E70;
     font-size: 18px;
     line-height: 23px;
 }
@@ -799,13 +828,13 @@ input[type=email] {
     position: relative;
     top: 15px;
     height: 4px;
-    background-color: #c9c6c6;
+    background-color: #686E70;
 }
 
 .range-bar {
     position: absolute;
     height: 4px;
-    background-color: #ffffff;
+    background-color: #FFFFFF;
 }
 
 .range-toggle {
@@ -814,20 +843,20 @@ input[type=email] {
     height: 20px;
     border: none;
     border-radius: 5px;
-    background: #ffffff;
+    background: #FFFFFF;
     cursor: pointer;
 }
 
 .range-toggle:hover {
-    box-shadow: 0 4px 10px 0 #8e8d8d;
+    box-shadow: 0 4px 10px 0 #8E8D8D;
 }
 
 .range-toggle:focus {
-    outline: 3px solid #83b3d3;
+    outline: 3px solid #83B3D3;
 }
 
 .range-toggle:active {
-    outline: 2px solid #83b3d3;
+    outline: 2px solid #83B3D3;
 }
 
 .toggle-min {
@@ -870,7 +899,7 @@ input[type=email] {
     color:#FFFFFF;
     border-radius: 4px;
     padding: 14px 35px;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
     cursor: pointer;
 }
 
@@ -886,7 +915,6 @@ input[type=email] {
 .btn-filter:disabled {
     background-color: #E5E5E5;
 }
-
 
 input[type=reset].btn-filter-reset {
     font-size: 16px;
@@ -917,12 +945,11 @@ input[type=reset].btn-filter-reset:active {
     border-radius: 4px;
 }
 
-
 /*Сортировка состояний страницы*/
 
 .sorting-wrapper {
     display: flex;
-    padding: 50px 72px 56px 72px;
+    padding: 40px 64px 56px 72px;
 }
 
 .catalog-hostel-search-title {
@@ -937,11 +964,11 @@ input[type=reset].btn-filter-reset:active {
 .catalog-select {
     -moz-appearance: none;
 	-webkit-appearance: none;
-    width: 295px;
+    width: 292px;
     height: 50px;
     border: 2px solid #E5E5E5;
     border-radius: 4px;
-    padding: 14px 130px 14px 20px;
+    padding: 12px 128px 12px 20px;
     font-family: inherit;
     font-size: 18px;
     line-height: 21px;
@@ -966,8 +993,6 @@ input[type=reset].btn-filter-reset:active {
     border: 2px solid #B3B3B3;
     pointer-events: none;
 }
-
-
 
 .cards-condition-list {
     list-style-type: none;
@@ -1018,7 +1043,6 @@ input[type=reset].btn-filter-reset:active {
     border: 2px solid #000000;
 }
 
-
 /*Карточки продуктов*/
 
 .catalog-products {
@@ -1035,14 +1059,14 @@ input[type=reset].btn-filter-reset:active {
     display: flex;
     flex-wrap: wrap;
     gap: 0 18px;
-    margin-bottom: 66px;
+    margin-bottom: 70px;
 }
 
 .product-card {
     padding: 20px;
     display: grid;
     grid-template-columns: 140px 140px;
-    gap: 16px 20px;
+    gap: 14px 20px;
 }
 
 .products-card-image {
@@ -1176,7 +1200,8 @@ input[type=reset].btn-filter-reset:active {
 .subscribe-catalog {
     background-color: #FFFFFF;
     background-size: 100% auto;
-    padding: 94px 200px;
+    padding: 69px 200px;
+    padding-bottom: 98px;
 }
 
 .subscribe-title.catalog {
@@ -1190,13 +1215,14 @@ input[type=reset].btn-filter-reset:active {
 input[type=email].input-catalog {
     background-color: #F2F2F2;
 }
+
 /*Пагинация*/
+
 .pagination-wrapper {
     display: flex;
-    padding: 30px 72px 25px 72px;
+    padding: 28px 72px 25px 72px;
     justify-content: space-between;
     align-items: center;
-    /* border-top: 1px solid #E6E6E6 */
 }
 
 .pagination {
@@ -1239,17 +1265,16 @@ input[type=email].input-catalog {
 .pagination-select {
     -moz-appearance: none;
     -webkit-appearance: none;
-    width: 165px;
+    width: 160px;
     border: 2px solid #E5E5E5;
     border-radius: 4px;
-    padding: 14px 130px 14px 20px;
+    padding: 14px 128px 14px 20px;
     font-family: inherit;
     font-size: 18px;
     line-height: 21px;
     color: #333333;
     background: url('../images/icon/icon-arrow.svg') no-repeat left 90% bottom 45%;
 }
-
 
 /*Модальное окно*/
 
@@ -1262,7 +1287,7 @@ input[type=email].input-catalog {
     height: 100%;
     background-color: rgba(242, 242, 242, 0.8);
     z-index: 1;
-    /*display: none;*/
+    display: none;
 }
 
 .modal {
@@ -1384,7 +1409,6 @@ input[type=text].modal-date::placeholder:hover {
 input[type=text].modal-date::placeholder:active {
     color: #000000;
 }
-
 
 .modal-date-error {
     font-size: 16px;
@@ -1522,8 +1546,6 @@ input[type=text].modal-date::placeholder:active {
     border: none;
     color: #CCCCCC;
 }
-
-
 
 input[type=number].visiters-number {
     font-family: inherit;
