@@ -832,7 +832,7 @@ input[type=email] {
     position: absolute;
     top: 25%;
     right: 10%;
-    color: #c9c6c6;
+    color: #686E70;
     font-size: 18px;
     line-height: 23px;
 }
@@ -841,13 +841,13 @@ input[type=email] {
     position: relative;
     top: 15px;
     height: 4px;
-    background-color: #c9c6c6;
+    background-color: #686E70;
 }
 
 .range-bar {
     position: absolute;
     height: 4px;
-    background-color: #ffffff;
+    background-color: #FFFFFF;
 }
 
 .range-toggle {
@@ -856,20 +856,20 @@ input[type=email] {
     height: 20px;
     border: none;
     border-radius: 5px;
-    background: #ffffff;
+    background: #FFFFFF;
     cursor: pointer;
 }
 
 .range-toggle:hover {
-    box-shadow: 0 4px 10px 0 #8e8d8d;
+    box-shadow: 0 4px 10px 0 #8E8D8D;
 }
 
 .range-toggle:focus {
-    outline: 3px solid #83b3d3;
+    outline: 3px solid #83B3D3;
 }
 
 .range-toggle:active {
-    outline: 2px solid #83b3d3;
+    outline: 2px solid #83B3D3;
 }
 
 .toggle-min {
