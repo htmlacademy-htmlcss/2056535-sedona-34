@@ -20,12 +20,6 @@
     font-display: swap;
 }
 
-/*
-*{
-    outline: 1px solid #6315e2;
-}
-*/
-
 body {
     margin: 0 auto;
     width: 1200px;
@@ -226,8 +220,6 @@ ol, ul {
     display: block;
     text-align: center;
     padding: 42px 270px 68px 270px;
-    /* max-width: 660px;
-    margin: 0; */
 }
 
 .main-index-title {
@@ -286,8 +278,6 @@ ol, ul {
 .more-pad {
     padding: 80px 85px;
 }
-
-
 
 .advantages-icon:not(:nth-child(3)) {
     margin-top: 10px;
@@ -570,7 +560,6 @@ input[type=email] {
 
 /*Страница каталога*/
 
-
 .main-inner {
     background-color: #FFFFFF;
     padding-top: 0;
@@ -657,8 +646,6 @@ input[type=email] {
     background-image: url(../images/icon/breadcrumbs-white.svg);
     background-repeat: no-repeat;
 }
-
-
 
 /*Фильтры*/
 
@@ -760,6 +747,7 @@ input[type=email] {
     border-radius: 50%;
     background-color: #3F5E72;
 }
+
 /*Range bar*/
 
 .input-wrapper {
@@ -790,7 +778,6 @@ input[type=email] {
 .input-number {
     -moz-appearance: textfield;
 }
-
 
 .start-number {
     border-right: none;
@@ -929,7 +916,6 @@ input[type=email] {
     background-color: #E5E5E5;
 }
 
-
 input[type=reset].btn-filter-reset {
     font-size: 16px;
     line-height: 20px;
@@ -958,7 +944,6 @@ input[type=reset].btn-filter-reset:active {
     border: 3px solid transparent;
     border-radius: 4px;
 }
-
 
 /*Сортировка состояний страницы*/
 
@@ -1057,7 +1042,6 @@ input[type=reset].btn-filter-reset:active {
 .cards-condition-link:active {
     border: 2px solid #000000;
 }
-
 
 /*Карточки продуктов*/
 
@@ -1239,7 +1223,6 @@ input[type=email].input-catalog {
     padding: 28px 72px 25px 72px;
     justify-content: space-between;
     align-items: center;
-    /* border-top: 1px solid #E6E6E6 */
 }
 
 .pagination {
@@ -1292,7 +1275,6 @@ input[type=email].input-catalog {
     color: #333333;
     background: url('../images/icon/icon-arrow.svg') no-repeat left 90% bottom 45%;
 }
-
 
 /*Модальное окно*/
 
@@ -1427,7 +1409,6 @@ input[type=text].modal-date::placeholder:hover {
 input[type=text].modal-date::placeholder:active {
     color: #000000;
 }
-
 
 .modal-date-error {
     font-size: 16px;
@@ -1565,8 +1546,6 @@ input[type=text].modal-date::placeholder:active {
     border: none;
     color: #CCCCCC;
 }
-
-
 
 input[type=number].visiters-number {
     font-family: inherit;
