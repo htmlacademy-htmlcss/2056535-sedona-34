@@ -1592,8 +1592,8 @@ input[type=text].modal-date::placeholder:active {
 
 .plus-minus-btn {
     padding: 0;
-    width: 25px;
-    height: 25px;
+    width: 40px;
+    height: 40px;
     border: none;
     background-color: transparent;
     font: inherit;
