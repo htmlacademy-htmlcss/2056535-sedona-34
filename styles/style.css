@@ -263,32 +263,29 @@ html {
     flex-wrap: wrap;
 }
 
-.advantages-item-info {
-    width: 400px;
-    height: 384px;
-}
-
-.advantages-content{
-    width: 400px;
-    height: 384px;
-}
-
 .advantages-content-description {
-    /* max-width: 230px; */
-    margin: 0;
-    padding: 70px 85px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-width: 400px;
+    padding: 20px 0 20px 0;
 }
 
-.more-pad {
-    padding: 80px 85px;
+.advantages-item-info {
+    min-height: 384px;
+    display: flex;
 }
 
-.advantages-icon:not(:nth-child(3)) {
-    margin-top: 10px;
+.advantages-content {
+    min-height: 384px;
+    display: flex;
 }
 
 .advantages-image {
     display: block;
+    object-fit: cover;
+    height: auto;
+    max-width: 100%;
 }
 
 .advantages-title {
@@ -297,26 +294,25 @@ html {
     text-transform: uppercase;
     text-align: center;
     max-width: 230px;
-    padding-bottom: 5px;
-    margin-bottom: 25px;
-}
-
-.souvenirs-title {
-    margin-top: 25px;
+    margin: 0 auto;
+    margin-bottom: 30px;
 }
 
 .advantages-subtitle {
-    margin-bottom: 20px;
+    margin: 0 auto;
+    margin-bottom: 30px;
 }
 
 .advantages-description {
-    margin-top: 30px;
-    padding-bottom: 40px;
+    margin: 0 auto;
+    max-width: 230px;
 }
 
-.sub-description {
-    margin-top: -5px;
+.advantages-icon {
+    margin: 0 auto;
+    margin-bottom: 30px;
 }
+
 
 .advantages-subtitle::before {
     content: "— ";
@@ -1268,15 +1264,52 @@ input[type=email].input-catalog {
     box-sizing: border-box;
     width: 60px;
     height: 60px;
+    border: 1px solid #82B3D3;
     border-radius: 4px;
     display: flex;
     align-items: center;
     justify-content: center;
+    outline: none;
+}
+
+.pagination-link:hover {
+    background-color:  #68A2CA;
+    border: 1px solid #82B3D3;
+}
+
+.pagination-link:focus-visible {
+    background-color:  #68A2CA;
+    border: 1px solid #82B3D3;
+}
+
+.pagination-link:active {
+    background-color:  #82B3D3;
+    border: 1px solid #82B3D3;
+    color: #A7CAE0
 }
 
 .pagination-current {
     color: #000000;
     background-color: #F2F2F2;
+    border: 1px solid #F2F2F2;
+}
+
+.pagination-current:hover {
+    color: #000000;
+    background-color: #F2F2F2;
+    border: 1px solid #F2F2F2;
+}
+
+.pagination-current:focus {
+    color: #000000;
+    background-color: #F2F2F2;
+    border: 1px solid #F2F2F2;
+}
+
+.pagination-current:active {
+    color: #000000;
+    background-color: #F2F2F2;
+    border: 1px solid #F2F2F2;
 }
 
 .pagination-select-label {
@@ -1347,10 +1380,17 @@ input[type=email].input-catalog {
     background-color: #F2F2F2;
     border: none;
     border-radius: 50%;
-    background-image: url(../images/icon/icon-cross.svg);
-    background-repeat: no-repeat;
-    background-position: center;
+}
+
+.modal-close-button-icon {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin: auto;
     cursor: pointer;
+    fill: #000000;
 }
 
 .modal-close-button:hover {
@@ -1365,6 +1405,7 @@ input[type=email].input-catalog {
 .modal-close-button:active {
     border: none;
     background-color: #E6E6E6;
+    color: #A1A1A1;
 }
 
 .modal-label {
@@ -1551,8 +1592,8 @@ input[type=text].modal-date::placeholder:active {
 
 .plus-minus-btn {
     padding: 0;
-    width: 25px;
-    height: 25px;
+    width: 40px;
+    height: 40px;
     border: none;
     background-color: transparent;
     font: inherit;
@@ -1635,6 +1676,6 @@ input[type=number].visiters-number {
 }
 
 .modal-search-btn:active {
+    border: 3px solid transparent;
     color: #95BEDA;
-    border: none;
 }
