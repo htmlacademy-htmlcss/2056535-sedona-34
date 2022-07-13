@@ -1345,7 +1345,7 @@ input[type=email].input-catalog {
     height: 100%;
     background-color: rgba(242, 242, 242, 0.8);
     z-index: 1;
-    display: none;
+    /*display: none;*/
 }
 
 .modal {
@@ -1384,10 +1384,17 @@ input[type=email].input-catalog {
     background-color: #F2F2F2;
     border: none;
     border-radius: 50%;
-    background-image: url(../images/icon/icon-cross.svg);
-    background-repeat: no-repeat;
-    background-position: center;
+}
+
+.modal-close-button-icon {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin: auto;
     cursor: pointer;
+    fill: #000000;
 }
 
 .modal-close-button:hover {
@@ -1402,6 +1409,7 @@ input[type=email].input-catalog {
 .modal-close-button:active {
     border: none;
     background-color: #E6E6E6;
+    color: #A1A1A1;
 }
 
 .modal-label {
