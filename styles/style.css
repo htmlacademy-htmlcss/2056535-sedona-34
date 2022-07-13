@@ -1635,6 +1635,6 @@ input[type=number].visiters-number {
 }
 
 .modal-search-btn:active {
+    border: 3px solid transparent;
     color: #95BEDA;
-    border: none;
 }
