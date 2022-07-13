@@ -706,7 +706,7 @@ input[type=email] {
     padding-left: 40px;
 }
 
-.catalog-checkbox {
+.control-input[type="checkbox"] + .catalog-checkbox {
     position: absolute;
     left: 2px;
     width: 20px;
@@ -716,36 +716,48 @@ input[type=email] {
     cursor: pointer;
 }
 
-.checkbox:checked + .catalog-checkbox::before {
-    content: '';
-    position: absolute;
-    width: 25px;
-    height: 25px;
-    background-image: url(../images/icon/checkbox-gray.svg);
-    background-repeat: no-repeat;
-    top: 25%;
-    left: 25%;
+.control-input[type="checkbox"]:hover + .catalog-checkbox {
+    opacity: 0.6;
 }
 
-.catalog-radio {
+.control-input[type="checkbox"]:focus + .catalog-checkbox {
+    opacity: 0.6;
+    box-shadow: 0 0 0 3px #83B3D3;
+}
+
+.control-input[type="checkbox"]:active + .catalog-checkbox {
+    opacity: 0.3;
+}
+
+.control-input[type="checkbox"]:checked + .catalog-checkbox {
+    background-image: url(../images/icon/checkbox-gray.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.control-input[type="radio"] + .catalog-radio {
     position: absolute;
     left: 3px;
     width: 20px;
     height: 20px;
     border-radius: 50%;
-    background-color: #ffffff;
+    background-color: #FFFFFF;
     cursor: pointer;
 }
 
-.radio:checked + .catalog-radio::before {
-    content: '';
-    position: absolute;
-    top: 25%;
-    left: 25%;
-    width: 10px;
-    height: 10px;
-    border-radius: 50%;
-    background-color: #3F5E72;
+.control-input[type="radio"]:focus + .catalog-radio {
+    border: 3px solid #83B3D3;
+}
+
+.control-input[type="radio"]:checked + .catalog-radio {
+    background-image: url(../images/icon/radio-gray.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.control-input[type="radio"]:checked:focus + .catalog-radio {
+    border: 3px solid transparent;
+    box-shadow: 0 0 0 3px #83B3D3;
 }
 
 /*Range bar*/
@@ -1353,6 +1365,7 @@ input[type=email].input-catalog {
     text-transform: capitalize;
     color: #333333;
     align-self: center;
+    position: relative;
 }
 
 input[type=text].modal-date {
@@ -1363,7 +1376,7 @@ input[type=text].modal-date {
     font-weight: 400;
     background-color: #F2F2F2;
     color:#000000;
-    border: none;
+    border: 2px solid transparent;
     border-radius: 4px;
     padding: 15px 178px 14px 19px;
     grid-column: 2/5;
@@ -1382,7 +1395,7 @@ input[type=text].modal-date:hover {
 
 input[type=text].modal-date:focus {
     background-color: #E6E6E6;
-    border: 3px solid #83B3D3;
+    border: 2px solid #83B3D3;
 }
 
 input[type=text].modal-date:active {
@@ -1408,6 +1421,20 @@ input[type=text].modal-date::placeholder:hover {
 
 input[type=text].modal-date::placeholder:active {
     color: #000000;
+}
+
+.modal-label.date-label::after {
+    position: absolute;
+    content: '';
+    background-image: url(../images/icon/icon-date.svg);
+    background-repeat: no-repeat;
+    background-color: transparent;
+    background-position: 50% 50%;
+    opacity: 0.3;
+    width: 18px;
+    height: 15px;
+    bottom: 4px;
+    left: 540px;
 }
 
 .modal-date-error {
@@ -1583,10 +1610,11 @@ input[type=number].visiters-number {
     background-color: #82B3D3;
     color: #FFFFFF;
     max-width: 575px;
-    border: none;
+    border: 3px solid transparent;
     border-radius: 10px;
     padding: 12px 15px;
     margin-top: 40px;
+
 }
 
 .modal-search-btn:hover {
