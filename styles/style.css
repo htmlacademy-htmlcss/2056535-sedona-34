@@ -263,32 +263,29 @@ html {
     flex-wrap: wrap;
 }
 
-.advantages-item-info {
-    width: 400px;
-    height: 384px;
-}
-
-.advantages-content{
-    width: 400px;
-    height: 384px;
-}
-
 .advantages-content-description {
-    /* max-width: 230px; */
-    margin: 0;
-    padding: 70px 85px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-width: 400px;
+    padding: 20px 0 20px 0;
 }
 
-.more-pad {
-    padding: 80px 85px;
+.advantages-item-info {
+    min-height: 384px;
+    display: flex;
 }
 
-.advantages-icon:not(:nth-child(3)) {
-    margin-top: 10px;
+.advantages-content {
+    min-height: 384px;
+    display: flex;
 }
 
 .advantages-image {
     display: block;
+    object-fit: cover;
+    height: auto;
+    max-width: 100%;
 }
 
 .advantages-title {
@@ -297,26 +294,25 @@ html {
     text-transform: uppercase;
     text-align: center;
     max-width: 230px;
-    padding-bottom: 5px;
-    margin-bottom: 25px;
-}
-
-.souvenirs-title {
-    margin-top: 25px;
+    margin: 0 auto;
+    margin-bottom: 30px;
 }
 
 .advantages-subtitle {
-    margin-bottom: 20px;
+    margin: 0 auto;
+    margin-bottom: 30px;
 }
 
 .advantages-description {
-    margin-top: 30px;
-    padding-bottom: 40px;
+    margin: 0 auto;
+    max-width: 230px;
 }
 
-.sub-description {
-    margin-top: -5px;
+.advantages-icon {
+    margin: 0 auto;
+    margin-bottom: 30px;
 }
+
 
 .advantages-subtitle::before {
     content: "— ";
@@ -1345,7 +1341,7 @@ input[type=email].input-catalog {
     height: 100%;
     background-color: rgba(242, 242, 242, 0.8);
     z-index: 1;
-    /*display: none;*/
+    display: none;
 }
 
 .modal {
