@@ -1268,15 +1268,52 @@ input[type=email].input-catalog {
     box-sizing: border-box;
     width: 60px;
     height: 60px;
+    border: 1px solid #82B3D3;
     border-radius: 4px;
     display: flex;
     align-items: center;
     justify-content: center;
+    outline: none;
+}
+
+.pagination-link:hover {
+    background-color:  #68A2CA;
+    border: 1px solid #82B3D3;
+}
+
+.pagination-link:focus-visible {
+    background-color:  #68A2CA;
+    border: 1px solid #82B3D3;
+}
+
+.pagination-link:active {
+    background-color:  #82B3D3;
+    border: 1px solid #82B3D3;
+    color: #A7CAE0
 }
 
 .pagination-current {
     color: #000000;
     background-color: #F2F2F2;
+    border: 1px solid #F2F2F2;
+}
+
+.pagination-current:hover {
+    color: #000000;
+    background-color: #F2F2F2;
+    border: 1px solid #F2F2F2;
+}
+
+.pagination-current:focus {
+    color: #000000;
+    background-color: #F2F2F2;
+    border: 1px solid #F2F2F2;
+}
+
+.pagination-current:active {
+    color: #000000;
+    background-color: #F2F2F2;
+    border: 1px solid #F2F2F2;
 }
 
 .pagination-select-label {
